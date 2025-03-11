@@ -61,7 +61,7 @@ export default function QuoteForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit(handleFormSubmit)} className="grid grid-cols-1 place-items-center p-12 bg-gradient-to-b rounded-[20px] from-[#132C4F] to-[#0C1D35] border-1 border-[#132C4F]/4 shadow-[inset_0px_1px_0px_rgba(255, 255, 255, 0.04)]">
+        <form onSubmit={handleSubmit(handleFormSubmit)} className="grid grid-cols-1 place-items-center p-12 my-2 bg-gradient-to-b rounded-[20px] from-[#132C4F] to-[#0C1D35] border-1 border-[#132C4F]/4 shadow-[inset_0px_1px_0px_rgba(255, 255, 255, 0.04)]">
             <div className="w-full bg-[#0C1D35]/60 border-1 border-[#132C4F] shadow-[inset_0px_1px_0px_rgba(255, 255, 255, 0.04)] rounded-[20px] p-3">
                 <input {...register("name", {
                     required: "Full name is required",
