@@ -1,5 +1,5 @@
 import {motion} from "framer-motion";
-import LRSlogo from "../assets/final-logo.png";
+import LRSlogo from "../assets/logo/final-logo.png";
 import Hamburger from "../assets/hamburger.svg";
 import Eco from "../assets/eco.svg";
 import Facebook from "../assets/facebook.svg";
@@ -8,12 +8,13 @@ import Health from "../assets/health.svg";
 import Instagram from "../assets/instagram.svg";
 import Whatsapp from "../assets/whatsapp.svg";
 import Youtube from "../assets/youtube.svg";
-import Map from "../assets/map.svg";
+import Cooperate from "../assets/cooperate.png";
+import Calendar from "../assets/calendar.svg";
 import { useState } from "react";
-import PressureWashing from "../assets/pressure-washing.png";
-import Location from "../assets/location.svg";
 import ServiceCard from "../lib/components/ServiceCard";
 import CheckYourPostcode from "../lib/components/CheckYourPostcode";
+import {services} from "../lib/utils/services";
+import QuoteForm from "../lib/components/QuoteForm";
 
 function App() {
     const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
@@ -59,52 +60,6 @@ function App() {
             }
         }
     };
-
-    // Services data
-    const services = [
-        {
-            id: "window-cleaning",
-            name: "Window Cleaning",
-            number: "01",
-            image: PressureWashing,
-            description: "Our professional window cleaning service removes dirt, grime, and water spots, leaving your windows crystal clear."
-        },
-        {
-            id: "gutter-cleaning",
-            name: "Gutter Cleaning",
-            number: "02",
-            image: PressureWashing,
-            description: "Keep your gutters flowing freely with our thorough gutter cleaning service."
-        },
-        {
-            id: "pressure-washing",
-            name: "Pressure Washing",
-            number: "03",
-            image: PressureWashing,
-            description: "Revitalize your property with our expert pressure washing services. We use advanced equipment and eco-friendly solutions for a deep, lasting clean. We perform under pressure."
-        },
-        {
-            id: "roof-cleaning",
-            name: "Roof Cleaning",
-            number: "04",
-            image: PressureWashing,
-            description: "Revitalize your property with our expert pressure washing services. We use advanced equipment and eco-friendly solutions for a deep, lasting clean. We perform under pressure."
-        },
-        {
-            id: "upvc-conservatory",
-            name: "UPVC & Conservatory",
-            number: "05",
-            image: PressureWashing,
-            description: "Revitalize your property with our expert pressure washing services. We use advanced equipment and eco-friendly solutions for a deep, lasting clean. We perform under pressure."
-        },
-        {
-            id: "render-cleaning",
-            name: "Render Cleaning",
-            number: "06",
-            image: PressureWashing,
-            description: "Revitalize your property with our expert pressure washing services. We use advanced equipment and eco-friendly solutions for a deep, lasting clean. We perform under pressure."
-        }
-    ];
 
     return (
         <>
@@ -183,21 +138,28 @@ function App() {
                 <CheckYourPostcode />
             </div>
             <div className="bg-gradient-to-b from-[#0D141A] to-[#080C10] px-[30px] pb-20">
-                <div className="flex flex-col space-y-4">
-                    <h1 className="text-center text-5xl opacity-85 pt-12 mb-6">Lets get your <h1 className="text-[#ECA133]">free</h1> quote</h1>
+                <div className="flex flex-col space-y-7">
+                    <h1 className="text-center text-5xl opacity-85 pt-12">
+                        Let’s get your <span className="text-[#ECA133]">free</span> quote
+                    </h1>
                     <p className="text-center opacity-80 font-normal">Are you ready to get the shiniest house on the block? I bring exceptional shine and cleanliness to your property at an affordable rate.</p>
-                    <div>
-
+                    <div className="grid grid-cols-[1fr_2fr] p-4">
+                        <img className="rounded-full" src={Cooperate} alt=""/>
+                        <div className="flex flex-col justify-center">
+                            <p className="text-2xl">Liam Sanderson</p>
+                            <p className="text-xs">Founder & Specialist Exterior Detailer</p>
+                        </div>
                     </div>
-                    <form className="flex flex-col">
-                        <input type="text" />
-                        <input type="email" />
-                        <input type="number" />
-                        <select>
-                            <option></option>
-                        </select>
-                        <input type="text" />
-                    </form>
+                    <QuoteForm />
+                    <p className="text-center text-white/70 font-normal">Want to contact us directly? <span className="text-[#80D3EE]/100 underline">Give us a call.</span></p>
+                    <div className="flex flex-col gap-4 mt-8">
+                        <p className="text-center text-white text-5xl font-semibold">what's next?</p>
+                        <div className="grid grid-rows-[2fr_1fr_1fr] px-8 py-12 place-items-center rounded-[20px] rounded-br-[0px] bg-gradient-to-b from-[#000000] to-[#060B11] bg-opacity-60 border-1 border-[#FFFFFF]/4 shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)]">
+                            <img src={Calendar} alt="" width="48" height="48"/>
+                            <p className="text-center text-2xl font-semibold">prompt response</p>
+                            <p className="text-center font-light opacity-80">We aim to get back to you within 2 business days</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

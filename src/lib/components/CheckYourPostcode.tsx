@@ -30,12 +30,6 @@ export default function CheckYourPostcode() {
     };
 
     function getAreaCodeFromPostcode(postcode : string) {
-
-        // cases
-        //CO12 5DZ
-        //CO125DZ
-        //CO12XD
-        //CO1 2XD
         postcode = postcode.toUpperCase().replaceAll(' ', '');
         if (postcode.length === 5) return postcode.slice(0,2);
         if (postcode.length === 6) return postcode.slice(0,3);
