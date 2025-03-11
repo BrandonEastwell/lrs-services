@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import Check from "../../assets/check.svg"
 import Warning from "../../assets/warning.svg"
 
-export default function CheckYourPostcode() {
+export default function Postcode() {
     const [postcode, setPostcode] = useState<string | null>(null);
     const [inArea, setInArea] = useState(false);
     const [error, setError] = useState<string | null>(null);
