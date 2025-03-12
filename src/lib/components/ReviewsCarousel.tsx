@@ -1,11 +1,10 @@
 import TestimonialCard from "./TestimonialCard";
 import {useState} from "react";
 import ReviewsData from "../datasets/dataset_Google-Maps-Reviews-Scraper_2025-03-11_14-52-01-450.json";
-import {Swiper, SwiperSlide, useSwiper} from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import { EffectCoverflow } from 'swiper/modules';
-import Arrow from "../../assets/left_arrow.svg";
 import CarouselButtons from "./CarouselButtons";
 
 interface reviews {
@@ -32,8 +31,8 @@ export default function ReviewsCarousel() {
     }
 
     return (
-        <div>
-            <p className="text-center text-white text-5xl font-semibold mb-2">what they say</p>
+        <>
+            <h1 className="text-center text-white text-5xl font-bold mb-2">what they say</h1>
             <p className="text-center font-light text-sm py-1 opacity-80">out of {reviews[0].reviewsCount} reviews</p>
             <Swiper
                 effect={'coverflow'}
@@ -58,6 +57,6 @@ export default function ReviewsCarousel() {
                 ))}
                 <CarouselButtons currentIndex={currentIndex} maxIndex={reviews.length} next={nextReview} prev={prevReview} />
             </Swiper>
-        </div>
+        </>
     )
 }
