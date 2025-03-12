@@ -10,7 +10,7 @@ export default function QuoteSection() {
                 <h1 className="text-center text-5xl">
                     Let’s get your <span className="text-[#ECA133]">free</span> quote
                 </h1>
-                <p className="text-center opacity-70 font-light my-7">Are you ready to get the shiniest house on the block? I bring exceptional shine and cleanliness to your property at an affordable rate.</p>
+                <p className="text-center opacity-80 font-light my-7">Are you ready to get the shiniest house on the block? I bring exceptional shine and cleanliness to your property at an affordable rate.</p>
                 <div className="grid grid-cols-[1fr_2fr] p-4">
                     <img className="rounded-full" src={Cooperate} alt=""/>
                     <div className="flex flex-col justify-center">

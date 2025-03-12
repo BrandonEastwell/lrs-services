@@ -4,6 +4,10 @@ import ReviewsCarousel from "../lib/components/ReviewsCarousel";
 import ResultsCarousel from "../lib/components/ResultsCarousel";
 import QuoteSection from "../lib/components/QuoteSection";
 import ServicesSection from "../lib/components/ServicesSection";
+import Footer from "../lib/components/Footer";
+import WhyLRS from "../lib/components/WhyLRS";
+import HowWeWork from "../lib/components/HowWeWork";
+import YoutubeSection from "../lib/components/YoutubeSection";
 
 function App() {
 
@@ -18,16 +22,19 @@ function App() {
                 </div>
             </div>
             <div className="bg-gradient-to-b from-[#0D141A] to-[#0F1D2C] px-[30px] py-15">
+                <WhyLRS />
                 <ServicesSection />
                 <Postcode />
             </div>
             <div className="bg-gradient-to-b from-[#0D141A] to-[#0D141A] px-[30px] py-15 space-y-20 overflow-hidden">
                 <ResultsCarousel />
+                <YoutubeSection />
                 <ReviewsCarousel />
             </div>
-            <div className="bg-gradient-to-b from-[#0D141A] to-[#080C10] px-[30px] py-15">
+            <div className="bg-gradient-to-b from-[#0F1D2C] to-[#0D141A] px-[30px] py-15">
                 <QuoteSection />
             </div>
+            <Footer />
         </>
     );
 }
