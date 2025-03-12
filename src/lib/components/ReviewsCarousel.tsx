@@ -31,7 +31,7 @@ export default function ReviewsCarousel() {
     }
 
     return (
-        <>
+        <div>
             <h1 className="text-center text-white text-5xl font-bold mb-2">what they say</h1>
             <p className="text-center font-light text-sm py-1 opacity-80">out of {reviews[0].reviewsCount} reviews</p>
             <Swiper
@@ -42,7 +42,7 @@ export default function ReviewsCarousel() {
                 coverflowEffect={{
                     rotate: 50,
                     stretch: 0,
-                    depth: 100,
+                    depth: 200,
                     modifier: 1,
                     slideShadows: true,
                 }}
@@ -57,6 +57,6 @@ export default function ReviewsCarousel() {
                 ))}
                 <CarouselButtons currentIndex={currentIndex} maxIndex={reviews.length} next={nextReview} prev={prevReview} />
             </Swiper>
-        </>
+        </div>
     )
 }

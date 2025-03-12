@@ -26,8 +26,8 @@ export default function ResultsCarousel() {
         return setCurrentIndex(prevState => prevState - 1);
     }
     return (
-        <>
-            <h1 className="text-center text-white text-5xl font-bold mb-4 mt-7">happy results</h1>
+        <div>
+            <h1 className="text-center text-white text-5xl font-bold mb-4">happy results</h1>
             <Swiper
                 noSwiping={true}
                 allowTouchMove={false}
@@ -49,6 +49,6 @@ export default function ResultsCarousel() {
                 ))}
                 <CarouselButtons currentIndex={currentIndex} maxIndex={images.length} next={nextSlide} prev={prevSlide} />
             </Swiper>
-        </>
+        </div>
     )
 }

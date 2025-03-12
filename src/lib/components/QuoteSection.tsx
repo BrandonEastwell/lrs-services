@@ -5,7 +5,7 @@ import Calendar from "../../assets/calendar.svg";
 export default function QuoteSection() {
 
     return (
-        <div className="bg-gradient-to-b from-[#0D141A] to-[#080C10] px-[30px] py-20">
+        <>
             <div className="flex flex-col">
                 <h1 className="text-center text-5xl">
                     Let’s get your <span className="text-[#ECA133]">free</span> quote
@@ -29,6 +29,6 @@ export default function QuoteSection() {
                     <p className="text-center font-light opacity-80">We aim to get back to you within 2 business days</p>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

@@ -17,14 +17,16 @@ function App() {
                     <button className="bg-[#3D8BC3] border-[1px_solid_rgba(61,139,195,0.04)] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)]">Book appointment</button>
                 </div>
             </div>
-            <div className="bg-gradient-to-b from-[#0D141A] to-[#0F1D2C] px-[30px] py-20">
+            <div className="bg-gradient-to-b from-[#0D141A] to-[#0F1D2C] px-[30px] py-15">
                 <ServicesSection />
                 <Postcode />
             </div>
-            <QuoteSection />
-            <div className="bg-gradient-to-b from-[#0D141A] to-[#0D141A] px-[30px] pb-20 pt-20 overflow-hidden">
-                <ReviewsCarousel />
+            <div className="bg-gradient-to-b from-[#0D141A] to-[#0D141A] px-[30px] py-15 space-y-20 overflow-hidden">
                 <ResultsCarousel />
+                <ReviewsCarousel />
+            </div>
+            <div className="bg-gradient-to-b from-[#0D141A] to-[#080C10] px-[30px] py-15">
+                <QuoteSection />
             </div>
         </>
     );
