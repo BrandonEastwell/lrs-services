@@ -9,6 +9,7 @@ import Youtube from "../../assets/youtube.svg";
 import Instagram from "../../assets/instagram.svg";
 import Facebook from "../../assets/facebook.svg";
 import {useState} from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
@@ -59,14 +60,19 @@ export default function Navbar() {
             initial="closed"
             animate={isNavOpen ? "open" : "closed"}
             variants={navVariants}
-            className="fixed w-full overflow-hidden backdrop-blur-[15px] bg-white bg-opacity-20 z-50"
+            className="fixed w-full overflow-hidden backdrop-blur-[15px] bg-white/20 z-50"
         >
-            <div className="w-full h-full flex flex-col py-[12.5px] px-[30px] bg-[#060D13] bg-opacity-80">
-                <div className="justify-self-start flex justify-between items-center flex-row w-full">
-                    <img src={LRSlogo} alt="LRS Logo" width="50" height="30" />
-                    <button onClick={toggleNav} className="z-10">
+            <div className="w-full h-full flex flex-col py-[12.5px] px-[30px] bg-[#060D13]/80">
+                <div className="w-full flex flex-row justify-between items-center">
+                    <Link to={"/"}>
+                        <img src={LRSlogo} className="cursor-pointer" alt="LRS Logo" width="50" height="30" />
+                    </Link>
+                    <motion.button
+                        whileHover={{scale: 1.1}}
+                        whileTap={{scale: 1.2}}
+                        onClick={toggleNav} className="z-10">
                         <img src={Hamburger} alt="Menu" width="18" height="6" />
-                    </button>
+                    </motion.button>
                 </div>
 
                 {/* Menu content */}
@@ -76,11 +82,39 @@ export default function Navbar() {
                     initial="closed"
                     animate={isNavOpen ? "open" : "closed"}
                 >
-                    <nav className="flex flex-col font-bold text-4xl mt-8 space-y-6 text-white">
-                        <a href="#" className="">services</a>
-                        <a href="#" className="">why LRS</a>
-                        <a href="#" className="">contact us</a>
-                        <a href="#" className="">locations</a>
+                    <nav className="flex flex-col place-items-start font-bold text-4xl mt-8 space-y-6 text-white">
+                        <Link to={"services"}>
+                            <motion.button
+                                onClick={toggleNav}
+                                whileHover={{color: "#3D8BC3"}}
+                                whileTap={{scale: 0.9}}
+                                transition={{ duration: 0.1 }}
+                                className="">services</motion.button>
+                        </Link>
+                        <Link to={"whyLRS"}>
+                            <motion.button
+                                onClick={toggleNav}
+                                whileHover={{color: "#3D8BC3"}}
+                                whileTap={{scale: 0.9}}
+                                transition={{ duration: 0.1 }}
+                                className="">why LRS</motion.button>
+                        </Link>
+                        <Link to={"contact"}>
+                            <motion.button
+                                onClick={toggleNav}
+                                whileHover={{color: "#3D8BC3"}}
+                                whileTap={{scale: 0.9}}
+                                transition={{ duration: 0.1 }}
+                                className="">contact us</motion.button>
+                        </Link>
+                        <Link to={"locations"}>
+                            <motion.button
+                                onClick={toggleNav}
+                                whileHover={{color: "#3D8BC3"}}
+                                whileTap={{scale: 0.9}}
+                                transition={{ duration: 0.1 }}
+                                className="">locations</motion.button>
+                        </Link>
                     </nav>
                     <div className="flex flex-row gap-2">
                         <p>your house is our frame</p>
@@ -95,18 +129,38 @@ export default function Navbar() {
                         <img src={Eco} width="15" height="15" alt="" />
                     </div>
                     <div className="flex flex-row justify-between">
-                        <div className="w-[64px] h-[64px] place-content-center place-items-center bg-white/6 border border-[#132C4F]/[0.04] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)] rounded-[20px]">
-                            <img src={Whatsapp} width="36" height="36" alt="" />
-                        </div>
-                        <div className="w-[64px] h-[64px] place-content-center place-items-center bg-white/6 border border-[#132C4F]/[0.04] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)] rounded-[20px]">
-                            <img src={Youtube} width="36" height="36" alt="" />
-                        </div>
-                        <div className="w-[64px] h-[64px] place-content-center place-items-center bg-white/6 border border-[#132C4F]/[0.04] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)] rounded-[20px]">
-                            <img src={Instagram} width="36" height="36" alt="" />
-                        </div>
-                        <div className="w-[64px] h-[64px] place-content-center place-items-center bg-white/6 border border-[#132C4F]/[0.04] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)] rounded-[20px]">
-                            <img src={Facebook} width="36" height="36" alt="" />
-                        </div>
+                        <a href={""}>
+                            <motion.div
+                                whileHover={{scale: 1.1}}
+                                whileTap={{scale: 0.9}}
+                                className="w-[64px] h-[64px] place-content-center place-items-center bg-white/6 border border-[#132C4F]/[0.04] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)] rounded-[20px]">
+                                <img src={Whatsapp} width="36" height="36" alt="" />
+                            </motion.div>
+                        </a>
+                        <a href={"https://youtube.com/@LRSExteriorCleaning?si=qk7ohj1fYXky9pL8"}>
+                            <motion.div
+                                whileHover={{scale: 1.1}}
+                                whileTap={{scale: 0.9}}
+                                className="w-[64px] h-[64px] place-content-center place-items-center bg-white/6 border border-[#132C4F]/[0.04] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)] rounded-[20px]">
+                                <img src={Youtube} width="36" height="36" alt="" />
+                            </motion.div>
+                        </a>
+                        <a href={"https://www.instagram.com/l.cexteriorcleaning/"}>
+                            <motion.div
+                                whileHover={{scale: 1.1}}
+                                whileTap={{scale: 0.9}}
+                                className="w-[64px] h-[64px] place-content-center place-items-center bg-white/6 border border-[#132C4F]/[0.04] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)] rounded-[20px]">
+                                <img src={Instagram} width="36" height="36" alt="" />
+                            </motion.div>
+                        </a>
+                        <a href={"https://www.facebook.com/people/LRS-Exterior-Cleaning/100093042117110/"}>
+                            <motion.div
+                                whileHover={{scale: 1.1}}
+                                whileTap={{scale: 0.9}}
+                                className="w-[64px] h-[64px] place-content-center place-items-center bg-white/6 border border-[#132C4F]/[0.04] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)] rounded-[20px]">
+                                <img src={Facebook} width="36" height="36" alt="" />
+                            </motion.div>
+                        </a>
                     </div>
                 </motion.div>
             </div>

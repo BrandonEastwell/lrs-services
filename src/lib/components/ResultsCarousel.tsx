@@ -28,6 +28,7 @@ export default function ResultsCarousel() {
     return (
         <div>
             <h1 className="text-center text-white text-5xl font-bold mb-4">happy results</h1>
+            <p className="text-center opacity-80 font-light my-6">As the house detailing experts we know what it takes, so you dont have to.</p>
             <Swiper
                 noSwiping={true}
                 allowTouchMove={false}

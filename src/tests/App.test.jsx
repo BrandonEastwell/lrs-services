@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react';
 
-import App from '../app/App.tsx';
+import Layout from '../app/Layout.tsx';
 
 describe('App', () => {
     it('renders headline', () => {
-        render(<App title="React" />);
+        render(<Layout title="React" />);
         screen.debug();
-        // check if App components renders headline
+        // check if Layout components renders headline
     });
 });

@@ -1,6 +1,7 @@
 import {AnimatePresence, motion} from "framer-motion";
 import ArrowRight from "../../assets/right_arrow.svg";
 import Whatsapp from "../../assets/whatsapp.svg";
+import {Link} from "react-router-dom";
 
 interface ServiceCardProps {
     id: string,
@@ -103,9 +104,11 @@ export default function ServiceCard(serviceCard : ServiceCardProps) {
                             <div className="text-white font-medium mt-4">
                                 <p>{serviceCard.description}</p>
                                 <div className="flex items-center mt-4">
-                                    <button className="bg-white border text-black py-2 px-6 rounded-full mr-4">
-                                        Learn more
-                                    </button>
+                                    <Link to={`services/${serviceCard.name.replaceAll(' ', '').toLowerCase()}`}>
+                                        <button className="bg-white border text-black py-2 px-6 rounded-full mr-4">
+                                            Learn more
+                                        </button>
+                                    </Link>
                                     <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                                         <img src={Whatsapp} alt="WhatsApp" width="24" height="24" />
                                     </div>

@@ -32,8 +32,7 @@ export default function ReviewsCarousel() {
 
     return (
         <div>
-            <h1 className="text-center text-white text-5xl font-bold mb-2">what they say</h1>
-            <p className="text-center font-light text-sm py-1 opacity-80">out of {reviews[0].reviewsCount} reviews</p>
+            <h1 className="text-center text-white text-5xl font-bold mb-4">what they say</h1>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}

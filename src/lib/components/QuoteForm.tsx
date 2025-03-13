@@ -140,9 +140,12 @@ export default function QuoteForm() {
             <div className="w-full min-h-[250px] bg-[#0C1D35]/60 border-1 border-[#132C4F] shadow-[inset_0px_1px_0px_rgba(255, 255, 255, 0.04)] rounded-[20px] p-3 mt-3">
                 <textarea {...register("extra")} className="w-full h-full placeholder-white outline-0" placeholder="Anything we need to know?" rows={9}></textarea>
             </div>
-            <button className="w-full flex flex-row justify-center gap-2 bg-[#F99D1B]/10 border-1 border-[#132C4F]/10 shadow-[inset_0px_1px_0px_rgba(255, 255, 255, 0.04)] rounded-[20px] p-3 mt-3" type="submit">
+            <motion.button
+                whileHover={{scale: 1.1}}
+                whileTap={{scale: 1.2}}
+                className="w-full flex flex-row justify-center gap-2 bg-[#F99D1B]/10 border-1 border-[#132C4F]/10 shadow-[inset_0px_1px_0px_rgba(255, 255, 255, 0.04)] rounded-[20px] p-3 mt-3" type="submit">
                 Send inquiry <img src={Inquiry} alt="" width="20" height="20"/>
-            </button>
+            </motion.button>
         </form>
     )
 }

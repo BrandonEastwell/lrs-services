@@ -68,7 +68,8 @@ export default function Postcode() {
                 {inArea && !error && <motion.p
                     initial={{opacity: 0, y: -20}}
                     animate={{opacity: 1, y: 0}}
-                    className="flex flex-row gap-1 font-normal opacity-80 text-green-700">You are in reach of our services<img src={Check} alt="" width="12" height="12"/></motion.p>}
+                    className="flex flex-row gap-1 font-normal opacity-80 text-green-700">You are in reach of our services<img src={Check} alt="" width="12" height="12"/>
+                </motion.p>}
                 {error && <motion.p
                     initial={{opacity: 0, y: -20}}
                     animate={{opacity: 1, y: 0}}
