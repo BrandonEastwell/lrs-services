@@ -134,7 +134,7 @@ export default function Navbar() {
                                 whileHover={{scale: 1.1}}
                                 whileTap={{scale: 0.9}}
                                 className="w-[64px] h-[64px] place-content-center place-items-center bg-white/6 border border-[#132C4F]/[0.04] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)] rounded-[20px]">
-                                <img src={Whatsapp} width="36" height="36" alt="" />
+                                <img src={Whatsapp} width="36" alt="" />
                             </motion.div>
                         </a>
                         <a href={"https://youtube.com/@LRSExteriorCleaning?si=qk7ohj1fYXky9pL8"}>
@@ -142,15 +142,15 @@ export default function Navbar() {
                                 whileHover={{scale: 1.1}}
                                 whileTap={{scale: 0.9}}
                                 className="w-[64px] h-[64px] place-content-center place-items-center bg-white/6 border border-[#132C4F]/[0.04] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)] rounded-[20px]">
-                                <img src={Youtube} width="36" height="36" alt="" />
+                                <img src={Youtube} width="36" alt="" />
                             </motion.div>
                         </a>
-                        <a href={"https://www.instagram.com/l.cexteriorcleaning/"}>
+                        <a href={"https://www.instagram.com/lrsexteriorcleaning"}>
                             <motion.div
                                 whileHover={{scale: 1.1}}
                                 whileTap={{scale: 0.9}}
                                 className="w-[64px] h-[64px] place-content-center place-items-center bg-white/6 border border-[#132C4F]/[0.04] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)] rounded-[20px]">
-                                <img src={Instagram} width="36" height="36" alt="" />
+                                <img src={Instagram} width="36" alt="" />
                             </motion.div>
                         </a>
                         <a href={"https://www.facebook.com/people/LRS-Exterior-Cleaning/100093042117110/"}>
@@ -158,7 +158,7 @@ export default function Navbar() {
                                 whileHover={{scale: 1.1}}
                                 whileTap={{scale: 0.9}}
                                 className="w-[64px] h-[64px] place-content-center place-items-center bg-white/6 border border-[#132C4F]/[0.04] shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)] rounded-[20px]">
-                                <img src={Facebook} width="36" height="36" alt="" />
+                                <img src={Facebook} width="36" alt="" />
                             </motion.div>
                         </a>
                     </div>
