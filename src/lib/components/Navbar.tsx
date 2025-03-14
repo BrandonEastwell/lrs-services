@@ -83,7 +83,7 @@ export default function Navbar() {
                     animate={isNavOpen ? "open" : "closed"}
                 >
                     <nav className="flex flex-col place-items-start font-bold text-4xl mt-8 space-y-6 text-white">
-                        <Link to={"services"}>
+                        <Link to={"/services"}>
                             <motion.button
                                 onClick={toggleNav}
                                 whileHover={{color: "#3D8BC3"}}
@@ -91,7 +91,7 @@ export default function Navbar() {
                                 transition={{ duration: 0.1 }}
                                 className="">services</motion.button>
                         </Link>
-                        <Link to={"whyLRS"}>
+                        <Link to={"/whylrs"}>
                             <motion.button
                                 onClick={toggleNav}
                                 whileHover={{color: "#3D8BC3"}}
@@ -99,7 +99,7 @@ export default function Navbar() {
                                 transition={{ duration: 0.1 }}
                                 className="">why LRS</motion.button>
                         </Link>
-                        <Link to={"contact"}>
+                        <Link to={"/contact"}>
                             <motion.button
                                 onClick={toggleNav}
                                 whileHover={{color: "#3D8BC3"}}
@@ -107,7 +107,7 @@ export default function Navbar() {
                                 transition={{ duration: 0.1 }}
                                 className="">contact us</motion.button>
                         </Link>
-                        <Link to={"locations"}>
+                        <Link to={"/locations"}>
                             <motion.button
                                 onClick={toggleNav}
                                 whileHover={{color: "#3D8BC3"}}

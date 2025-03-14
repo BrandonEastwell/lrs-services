@@ -1,5 +1,12 @@
 import PressureWashing from "../../assets/pressure-washing.png";
 
+export interface Service {
+    id: string;
+    name: string;
+    number: string;
+    description: string;
+    image: any;
+}
 
 // Services data
 const services = [

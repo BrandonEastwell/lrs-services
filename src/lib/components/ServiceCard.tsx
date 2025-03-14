@@ -1,7 +1,7 @@
 import {AnimatePresence, motion} from "framer-motion";
 import ArrowRight from "../../assets/right_arrow.svg";
+import LearnMoreBtn from "./LearnMoreBtn";
 import Whatsapp from "../../assets/whatsapp.svg";
-import {Link} from "react-router-dom";
 
 interface ServiceCardProps {
     id: string,
@@ -10,18 +10,10 @@ interface ServiceCardProps {
     description: string,
     image: any,
     openService: string | null,
-    setOpenService: (id: string | null) => void
+    onToggle: (id: string | null) => void
 }
 
-export default function ServiceCard(serviceCard : ServiceCardProps) {
-    function toggleService(serviceId: string) {
-        if (serviceCard.openService === serviceId) {
-            serviceCard.setOpenService(null);
-        } else {
-            serviceCard.setOpenService(serviceId);
-        }
-    }
-
+export default function ServiceCard(service : ServiceCardProps) {
     const serviceContentVariants = {
         hidden: {
             opacity: 0,
@@ -74,9 +66,9 @@ export default function ServiceCard(serviceCard : ServiceCardProps) {
         <motion.div
             variants={bgVariants}
             initial={"closed"}
-            animate={serviceCard.openService === serviceCard.id ? "open" : "closed"}
-            className="overflow-hidden rounded-[20px] bg-[#0C1D35] bg-opacity-60 border-[1px_solid_rgba(19, 44, 79, 0.04)] shadow-[inset_0px_1px_0px_rgba(255, 255, 255, 0.04)]">
-            <div onClick={() => toggleService(serviceCard.id)} className="flex flex-row justify-between p-5 items-center font-bold cursor-pointer">
+            animate={service.openService === service.id ? "open" : "closed"}
+            className="rounded-[20px] bg-[#0C1D35] border-[#132c4f]/4 overflow-hidden">
+            <div onClick={() => service.onToggle(service.id)} className="flex flex-row justify-between px-6 py-5 items-center font-bold cursor-pointer">
                 <div className="flex flex-row gap-3 items-center">
                     <motion.img
                         src={ArrowRight}
@@ -85,14 +77,14 @@ export default function ServiceCard(serviceCard : ServiceCardProps) {
                         height="24"
                         variants={arrowVariants}
                         initial="closed"
-                        animate={serviceCard.openService === serviceCard.id ? "open" : "closed"}
+                        animate={service.openService === service.id ? "open" : "closed"}
                     />
-                    <p className="text-xl">{serviceCard.name}</p>
+                    <p className="text-xl">{service.name}</p>
                 </div>
-                <motion.p variants={numberVariants} initial={"closed"} animate={serviceCard.openService === serviceCard.id ? "open" : "closed"}>{serviceCard.number}.</motion.p>
+                <motion.p variants={numberVariants} initial={"closed"} animate={service.openService === service.id ? "open" : "closed"}>{service.number}.</motion.p>
             </div>
             <AnimatePresence>
-                {serviceCard.openService === serviceCard.id && (
+                {service.openService === service.id && (
                     <motion.div
                         variants={serviceContentVariants}
                         initial="hidden"
@@ -100,15 +92,11 @@ export default function ServiceCard(serviceCard : ServiceCardProps) {
                         exit="hidden"
                     >
                         <div className="overflow-hidden px-6 pb-5">
-                            <img src={serviceCard.image} alt={serviceCard.name} className="w-full rounded-[7px] rounded-br-[50px]" />
+                            <img src={service.image} alt={service.name} className="w-full rounded-[7px] rounded-br-[50px]" />
                             <div className="text-white font-medium mt-4">
-                                <p>{serviceCard.description}</p>
+                                <p>{service.description}</p>
                                 <div className="flex items-center mt-4">
-                                    <Link to={`services/${serviceCard.name.replaceAll(' ', '').toLowerCase()}`}>
-                                        <button className="bg-white border text-black py-2 px-6 rounded-full mr-4">
-                                            Learn more
-                                        </button>
-                                    </Link>
+                                    <LearnMoreBtn href={`services/${service.name.replaceAll(' ', '').toLowerCase()}`} />
                                     <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                                         <img src={Whatsapp} alt="WhatsApp" width="24" height="24" />
                                     </div>

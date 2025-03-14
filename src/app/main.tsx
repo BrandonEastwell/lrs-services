@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <Layout />,
         children: [
             { index: true, element: <Landing /> },
-            { path: "whyLRS", element: <About /> },
+            { path: "whylrs", element: <About /> },
             { path: "services", element: <Services />,
                 children: [
                     { index: true, element: <ServicesDefault /> },

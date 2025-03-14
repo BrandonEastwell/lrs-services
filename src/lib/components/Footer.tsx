@@ -17,7 +17,7 @@ export default function Footer() {
                     <img src={LRSlogo} alt="LRS Logo" width="50" height="30" />
                 </Link>
             </div>
-            <BookBtn innerHTML={"Contact Us"} />
+            <BookBtn innerHTML={"Contact Us"} href={"/contact"} />
             <div className="flex flex-col space-y-2 font-light text-sm">
                 <p>07539 282657</p>
                 <p className="underline">liam@lrsexteriorcleaning.com</p>
@@ -31,28 +31,28 @@ export default function Footer() {
                 <div className="flex flex-col">
                     <p className="mb-2 font-medium">The Company</p>
                     <div className="flex flex-col opacity-80 space-y-1">
-                        <Link to={"services"}>
+                        <Link to={"/services"}>
                             <motion.button
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
                                 className="">services</motion.button>
                         </Link>
-                        <Link to={"whyLRS"}>
+                        <Link to={"/whylrs"}>
                             <motion.button
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
                                 className="">why LRS</motion.button>
                         </Link>
-                        <Link to={"contact"}>
+                        <Link to={"/contact"}>
                             <motion.button
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
                                 className="">contact us</motion.button>
                         </Link>
-                        <Link to={"locations"}>
+                        <Link to={"/locations"}>
                             <motion.button
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
@@ -65,42 +65,42 @@ export default function Footer() {
                 <div className="flex flex-col">
                     <p className="mb-2 font-medium">Services</p>
                     <div className="flex flex-col opacity-80 space-y-1">
-                        <Link to={"services/windowcleaning"}>
+                        <Link to={"/services/windowcleaning"}>
                             <motion.button
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
                                 className="">window cleaning</motion.button>
                         </Link>
-                        <Link to={"services/guttercleaning"}>
+                        <Link to={"/services/guttercleaning"}>
                             <motion.button
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
                                 className="">gutter cleaning</motion.button>
                         </Link>
-                        <Link to={"services/pressurewashing"}>
+                        <Link to={"/services/pressurewashing"}>
                             <motion.button
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
                                 className="">pressure washing</motion.button>
                         </Link>
-                        <Link to={"services/roofcleaning"}>
+                        <Link to={"/services/roofcleaning"}>
                             <motion.button
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
                                 className="">roof cleaning</motion.button>
                         </Link>
-                        <Link to={"services/upvc&conservatory"}>
+                        <Link to={"/services/upvc&conservatory"}>
                             <motion.button
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
                                 className="">upvc & conservatory</motion.button>
                         </Link>
-                        <Link to={"services/rendercleaning"}>
+                        <Link to={"/services/rendercleaning"}>
                             <motion.button
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}

@@ -10,7 +10,7 @@ export default function YoutubeSection() {
                     allowFullScreen>
             </iframe>
             <div className="flex flex-col place-items-center my-4">
-                <BookBtn innerHTML={"Get an estimate"} />
+                <BookBtn innerHTML={"Get an estimate"} href={"/contact"} />
             </div>
         </div>
     )
