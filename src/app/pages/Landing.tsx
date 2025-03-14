@@ -24,6 +24,8 @@ export default function Landing() {
                 <Postcode />
             </div>
             <div className="bg-gradient-to-b from-[#0D141A] to-[#0D141A] px-[30px] py-10 space-y-10 overflow-hidden">
+                <h1 className="text-center text-white text-5xl font-bold mb-4">happy results</h1>
+                <p className="text-center opacity-80 font-light my-6">As the house detailing experts we know what it takes, so you dont have to.</p>
                 <ResultsCarousel />
             </div>
             <div className="bg-gradient-to-b from-[#0F1D2C] to-[#0F1D2C] px-[30px] py-10 space-y-10 overflow-hidden">

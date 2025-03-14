@@ -24,24 +24,42 @@
         "description": "We are committed to providing a seamless experience from start to finish. Our friendly team is dedicated to exceeding your expectations with prompt service, attention to detail, and a commitment to customer satisfaction."
       }
     ],
-    "cleaning_methods": {
-      "title": "Cleaning Methods",
-      "description": "We employ gentle yet powerful cleaning techniques that effectively remove dirt, streaks, grime, and other contaminants without causing damage to your windows. Our team uses low-pressure washing combined with eco-friendly detergents to ensure a thorough clean while preserving the integrity of your windows."
-    },
+    "methods": [
+      {
+        "title": "Professional Equipment",
+        "description": "We use specialized water-fed poles and professional-grade equipment to reach high windows safely and effectively without ladders."
+      },
+      {
+        "title": "Eco-Friendly Solutions",
+        "description": "Our biodegradable cleaning solutions effectively remove dirt and grime while being safe for the environment and your property."
+      },
+      {
+        "title": "Low-Pressure Techniques",
+        "description": "We employ gentle yet powerful cleaning techniques that effectively remove dirt, streaks, grime, and other contaminants without causing damage to your windows."
+      },
+      {
+        "title": "Thorough Process",
+        "description": "Our cleaning process includes frame wiping, sill cleaning, and glass polishing to ensure a complete and streak-free finish."
+      }
+    ],
     "FAQ" : [
       {
+        "id" : 1,
         "question" : "How often should I have my windows cleaned?",
         "answer" : "The frequency of window cleaning depends on various factors, such as your location, the surrounding environment, and personal preference. Generally, we recommend professional window cleaning at least twice a year to maintain a clear view and prolong the life of your windows. However, businesses or homes in areas with high pollution or near the coast may benefit from more frequent cleanings."
       },
       {
+        "id" : 2,
         "question" : "Are your cleaning methods safe for my windows and the environment?",
         "answer" : "Yes, our cleaning methods are both safe and eco-friendly. We use specialised equipment, such as water-fed poles, and biodegradable cleaning solutions to ensure your windows are cleaned effectively without causing damage or leaving harmful residues. Our approach guarantees a streak-free finish while protecting the environment."
       },
       {
+        "id" : 3,
         "question" : "Do I need to be home during the window cleaning service?",
         "answer" : "It is not necessary for you to be home during the exterior window cleaning service. However, if you also require interior window cleaning, we recommend being present to provide access. Our team is professional and trustworthy, ensuring your home is treated with the utmost care and respect."
       },
       {
+        "id" : 4,
         "question" : "What if it rains after my windows have been cleaned?",
         "answer" : "Light rain typically will not affect the cleanliness of your windows. However, if heavy rain or adverse weather conditions significantly impact the appearance of your freshly cleaned windows within 48 hours of service, we offer a satisfaction guarantee and will re-clean the affected windows at no additional cost. Your satisfaction is our priority."
       }
@@ -52,40 +70,58 @@
     "description": "At LRS Exterior Cleaning, we offer comprehensive pressure washing services designed to rejuvenate the appearance and cleanliness of your property. Using state-of-the-art equipment and eco-friendly cleaning solutions, our skilled technicians deliver exceptional results for both residential and commercial spaces.",
     "features": [
       {
+        "title": "Restored Property Appearance",
+        "description": "Our pressure washing services remove years of built-up dirt, grime, and stains, instantly restoring the appearance of your property and increasing its curb appeal and value."
+      },
+      {
+        "title": "Preventative Maintenance",
+        "description": "Regular pressure washing prevents the accumulation of harmful substances that can cause long-term damage to your property's surfaces, saving you money on costly repairs or replacements."
+      },
+      {
+        "title": "Enhanced Safety",
+        "description": "By removing slippery algae, moss, and mildew from walkways, driveways, and patios, we help reduce slip-and-fall hazards, creating a safer environment for your family, guests, or customers."
+      },
+      {
+        "title": "Healthier Environment",
+        "description": "Our services eliminate mold, mildew, and algae that can cause allergies and respiratory issues, contributing to a healthier living or working environment."
+      }
+    ],
+    "methods": [
+      {
         "title": "Exterior Surfaces",
         "description": "We specialise in cleaning a variety of exterior surfaces including siding, brick, stucco, and concrete. Our high-pressure washing removes dirt, mould, mildew, and other stains effectively, restoring surfaces to their original beauty."
       },
       {
         "title": "Driveways and Walkways",
-        "description": "Enhance your curb appeal with our driveway and walkway cleaning services. We remove oil stains, tyre marks, algae, and moss buildup, leaving your paved surfaces spotless and safe."
+        "description": "We use specialized pressure settings to clean driveways and walkways, removing oil stains, tyre marks, algae, and moss buildup, leaving your paved surfaces spotless and safe."
       },
       {
         "title": "Deck and Patio Cleaning",
-        "description": "Extend the life of your deck or patio with our gentle yet thorough cleaning. We remove dirt, grime, and weather stains to reveal the natural beauty of your outdoor spaces."
+        "description": "Our gentle pressure washing techniques extend the life of your deck or patio by removing dirt, grime, and weather stains to reveal the natural beauty of your outdoor spaces."
       },
       {
         "title": "Fence Cleaning",
-        "description": "Restore the look of your fence with our expert pressure washing. We clean all types of fencing materials, removing dirt, mould, and discolouration to enhance the appearance and durability of your fence."
+        "description": "We restore the look of your fence with expert pressure washing techniques suitable for all types of fencing materials, removing dirt, mould, and discolouration to enhance appearance and durability."
       }
     ],
-    "cleaning_methods": {
-      "title": "Cleaning Methods",
-      "description": "We specialise in high-pressure washing using advanced equipment that removes dirt, stains, mould, and mildew from exterior surfaces. Our eco-friendly detergents are effective yet gentle, ensuring that your property is cleaned without causing damage to surrounding environments."
-    },
     "FAQ" : [
       {
+        "id" : 1,
         "question" : "What surfaces can be safely pressure washed?",
         "answer" : "Pressure washing is safe for a variety of surfaces including concrete, brick, siding (vinyl, wood, or aluminum), stucco and some types of stone. Our trained technicians assess each surface to determine the appropriate pressure and cleaning method to avoid damage."
       },
       {
+        "id" : 2,
         "question" : "Is pressure washing environmentally friendly?",
         "answer" : "Yes, at LRS Exterior Cleaning, we prioritise eco-friendly practices. We use biodegradable detergents and carefully manage water usage to minimise environmental impact. Our methods comply with environmental regulations to ensure responsible cleaning."
       },
       {
+        "id" : 3,
         "question" : "How often should I schedule pressure washing for my home or business?",
         "answer" : "The frequency of pressure washing depends on factors such as weather conditions, location, and the type of surface. Generally, we recommend annual pressure washing to maintain cleanliness and prolong the life of your exterior surfaces."
       },
       {
+        "id" : 4,
         "question" : "Will pressure washing damage my property?",
         "answer" : "When performed by trained professionals using appropriate equipment and techniques, pressure washing is safe for most surfaces. Our team adjusts the pressure levels and selects suitable cleaning agents to ensure effective cleaning without causing damage to your property."
       }
@@ -112,24 +148,42 @@
         "description": "A clean roof reflects more sunlight, which can help reduce heat absorption and lower cooling costs during hot weather."
       }
     ],
-    "cleaning_methods": {
-      "title": "Roof Cleaning Methods",
-      "description": "We employ gentle cleaning techniques that effectively remove dirt, moss, algae, and other contaminants without causing damage to your roof’s shingles or underlying structure. Our team uses low-pressure washing combined with eco-friendly biocides to ensure a thorough clean while preserving the integrity of your roof."
-    },
+    "methods": [
+      {
+        "title": "Specialist Techniques",
+        "description": "We use specialist techniques to remove moss, algae, lichen, and any organic matter from the roof of your home or business without causing damage to the structure."
+      },
+      {
+        "title": "Low-Pressure Washing",
+        "description": "Our team uses low-pressure washing combined with eco-friendly biocides to ensure a thorough clean while preserving the integrity of your roof."
+      },
+      {
+        "title": "Gentle Cleaning",
+        "description": "We employ gentle cleaning techniques that effectively remove dirt, moss, algae, and other contaminants without causing damage to your roof's shingles or underlying structure."
+      },
+      {
+        "title": "Biocidal Treatments",
+        "description": "We apply biocidal treatments that continue to work after we leave, preventing the regrowth of moss and algae for extended periods."
+      }
+    ],
     "FAQ" : [
       {
+        "id" : 1,
         "question" : "Why should I clean my roof?",
         "answer" : "Regular cleaning not only improves the appearance of your home but also helps maintain the integrity of your roof. Removing debris and contaminants prevents premature wear and extends the lifespan of your roof."
       },
       {
+        "id" : 2,
         "question" : "Is roof cleaning safe for my roof?",
         "answer" : "Yes, our methods are safe and non-destructive. We use low-pressure washing techniques and eco-friendly detergents that are gentle on roofing materials while effectively removing dirt and stains."
       },
       {
+        "id" : 3,
         "question" : "How often should I have my roof cleaned?",
         "answer" : "The optimal frequency depends on factors such as your location, climate, and surrounding environment. We like to think that this is a one-off service with regular biocidal treatments to keep the roof clean for long periods."
       },
       {
+        "id" : 4,
         "question" : "Will roof cleaning affect my gutters or landscaping?\n",
         "answer" : "Our team takes great care to protect your gutters and landscaping during the cleaning process. We use protective coverings for gutters and ensure any runoff is properly managed to prevent damage to plants and surrounding areas."
       }
@@ -160,24 +214,46 @@
         "description": "Accumulated debris can cause gutters to sag, rust and deteriorate over time. By having your gutters cleaned regularly, you can extend their lifespan and avoid costly replacements."
       }
     ],
-    "cleaning_methods": {
-      "title": "Cleaning Methods",
-      "description": "Our gutter clearing process includes a thorough inspection, debris removal using specialised tools, flushing of gutters and downspouts with water to ensure proper flow, a final inspection to check for damage, and complete clean-up of all collected debris. Our experienced professionals use eco-friendly practices to provide comprehensive service that guarantees customer satisfaction."
-    },
+    "methods": [
+      {
+        "title": "Inspection",
+        "description": "We begin with a thorough inspection of your gutter system to identify any issues or areas of concern. This helps us tailor our cleaning approach to your specific needs."
+      },
+      {
+        "title": "Debris Removal",
+        "description": "Our team removes all debris, including leaves, twigs and dirt, from your gutters and downspouts by hand or using specialised tools. We ensure that no obstructions remain that could impede water flow."
+      },
+      {
+        "title": "Flushing",
+        "description": "After clearing the debris, we flush the gutters and downspouts with water to ensure they are completely clear and functioning properly. This also helps to identify any leaks or damage that may need attention."
+      },
+      {
+        "title": "Final Inspection",
+        "description": "Once the gutter cleaning process is complete, we conduct a final inspection to ensure everything is in optimal condition. We check for any signs of damage or areas that may need repair."
+      },
+      {
+        "title": "Clean-Up",
+        "description": "Our team ensures that all debris is collected and disposed of properly, leaving your property clean and tidy."
+      }
+    ],
     "FAQ": [
       {
+        "id" : 1,
         "question": "How often should I have my gutters cleared?",
         "answer": "It is recommended to have your gutters cleared at least twice a year, typically in the spring and autumn. However, if you live in an area with many trees or frequent storms, more frequent cleaning may be necessary to prevent clogs and ensure proper water flow."
       },
       {
+        "id" : 2,
         "question": "What are the signs that my gutters need cleaning?",
         "answer": "Signs that your gutters need cleaning include water spilling over the edges, sagging gutters, visible debris, plant growth in the gutters and water stains on your exterior walls. If you notice any of these issues, it’s time to schedule a gutter cleaning service."
       },
       {
+        "id" : 3,
         "question": "Can gutter cleaning prevent pest infestations?",
         "answer": "Yes, regular gutter cleaning helps prevent pest infestations. Clogged gutters can attract pests like mosquitoes, rodents and birds by providing a suitable habitat. By keeping your gutters clean, you eliminate these potential nesting sites and reduce the risk of infestations."
       },
       {
+        "id" : 4,
         "question": "Is gutter cleaning safe for my roof and home exterior?",
         "answer": "Absolutely. Our professional gutter cleaning services are designed to be safe and non-invasive. We use specialised tools and techniques to clear your gutters without causing damage to your roof, siding or landscaping. Our experienced technicians take every precaution to protect your property while ensuring thorough cleaning."
       }
@@ -214,18 +290,22 @@
     },
     "FAQ": [
       {
+        "id" : 1,
         "question": "How often should I have my UPVC and conservatory cleaned?",
         "answer": "It is recommended to clean your UPVC and conservatory at least once a year. However, the frequency may vary depending on your location and exposure to environmental elements."
       },
       {
+        "id" : 2,
         "question": "Will the cleaning process damage my UPVC or conservatory?",
         "answer": "No, our cleaning methods are designed to be safe for UPVC materials. We use low-pressure washing and gentle cleaning agents that effectively remove dirt without causing damage."
       },
       {
+        "id" : 3,
         "question": "Can you remove all types of stains and buildup?",
         "answer": "Yes, our professional team is experienced in dealing with various types of stains, including algae, mold, and general grime. We use specialized techniques to ensure thorough and effective cleaning."
       },
       {
+        "id" : 4,
         "question": "Do I need to do anything to prepare for the cleaning service?",
         "answer": "We handle all the preparations for you. However, we recommend removing any personal items or delicate objects from the conservatory area to ensure their safety during the cleaning process."
       }
@@ -262,18 +342,22 @@
     },
     "FAQ": [
       {
+        "id" : 1,
         "question": "What is render cleaning?",
         "answer": "Render cleaning involves the removal of dirt, algae, mould and stains from the rendered surfaces of buildings to restore their appearance and prevent long-term damage."
       },
       {
+        "id" : 2,
         "question": "How often should I have my render cleaned?",
         "answer": "It’s recommended to have your render cleaned every 2-3 years, depending on environmental factors and the level of dirt accumulation."
       },
       {
+        "id" : 3,
         "question": "Are the cleaning products you use safe for the environment?",
         "answer": "Yes, we exclusively use eco-friendly detergents that are effective in cleaning while being safe for the environment and your property."
       },
       {
+        "id" : 4,
         "question": "Will render cleaning damage my property?",
         "answer": "No, our professional team uses specialised equipment and techniques to ensure a gentle yet effective clean that preserves the integrity of your render."
       }
