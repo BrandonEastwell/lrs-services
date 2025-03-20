@@ -2,10 +2,12 @@ import express from "express";
 import { contactRouter } from "./routes/contactRouter.js";
 import { reviewsRouter } from "./routes/reviewsRouter.js";
 import bodyParser from "body-parser";
+import cors from "cors";
 const app = express();
 
 const PORT = globalThis.process.env.PORT || 3000
 
+app.use(cors());
 app.use(bodyParser.json);
 app.use("/contact", contactRouter);
 app.use("/reviews", reviewsRouter);
