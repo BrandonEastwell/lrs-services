@@ -2,7 +2,6 @@ import ReactCompareImage from "react-compare-image";
 import CarouselButtons from "./CarouselButtons";
 import {useState} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {getImagePairs} from "../utils/imagePairs";
 import {EffectCards} from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/effect-cards';
@@ -12,10 +11,9 @@ interface image {
     after: string
 }
 
-export default function ResultsCarousel() {
+export default function ResultsCarousel({ images } : { images: image[] }) {
     const [currentIndex, setCurrentIndex] = useState<number>(1);
-    const images : image[] = getImagePairs();
-    
+
     const nextSlide = () => {
         if ((currentIndex + 1) > images.length) return;
         return setCurrentIndex(prevState => prevState + 1);

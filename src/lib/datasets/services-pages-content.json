@@ -65,7 +65,7 @@
       }
     ]
   },
-  "pressurewashing" : {
+  "pressurewashing": {
     "title": "Pressure Washing Services",
     "description": "At LRS Exterior Cleaning, we offer comprehensive pressure washing services designed to rejuvenate the appearance and cleanliness of your property. Using state-of-the-art equipment and eco-friendly cleaning solutions, our skilled technicians deliver exceptional results for both residential and commercial spaces.",
     "features": [
@@ -259,7 +259,7 @@
       }
     ]
   },
-  "upvc&conservatory": {
+  "upvcconservatory": {
     "title": "UPVC and Conservatory Cleaning",
     "description": "Maintaining the cleanliness and appearance of your UPVC windows, doors, and conservatories is essential for preserving their longevity and ensuring your property looks its best. At LRS Exterior Cleaning, we provide specialised UPVC and conservatory cleaning services designed to restore and rejuvenate these key features of your home. Our professional team employs advanced techniques and eco-friendly products to deliver outstanding results.",
     "features": [
@@ -284,10 +284,28 @@
         "description": "Clean UPVC windows, doors, and conservatories significantly enhance the aesthetic appeal of your property. Regular cleaning also helps prevent the buildup of mould and mildew, contributing to a healthier living environment."
       }
     ],
-    "cleaning_methods": {
-      "title": "Cleaning Methods",
-      "description": "We employ specialized techniques that are specifically designed for UPVC and conservatory materials. Our approach combines gentle yet effective cleaning solutions with professional equipment to remove dirt, algae, and stains without causing damage to the surfaces. Each cleaning is tailored to the specific needs of your UPVC fixtures and conservatory structure to ensure optimal results."
-    },
+    "methods": [
+      {
+        "title": "Inspection",
+        "description": "We begin with a thorough inspection of your UPVC and conservatory areas to assess the level of cleaning required and identify any specific concerns."
+      },
+      {
+        "title": "Preparation",
+        "description": "We prepare the area by removing loose debris and setting up protective coverings for surrounding landscaping and furniture."
+      },
+      {
+        "title": "Cleaning",
+        "description": "Using specialised equipment and eco-friendly detergents, we meticulously clean the UPVC surfaces. This includes pressure washing for larger areas and hand cleaning for more delicate components."
+      },
+      {
+        "title": "Detailing",
+        "description": "We pay special attention to corners, edges, and joints to ensure every part of your UPVC and conservatory is spotless. Our team also checks for and addresses any minor repairs if needed."
+      },
+      {
+        "title": "Final Inspection",
+        "description": "After cleaning, we conduct a final inspection to ensure all areas meet our high standards. We ensure your complete satisfaction before concluding the service."
+      }
+    ],
     "FAQ": [
       {
         "id" : 1,
@@ -316,30 +334,52 @@
     "description": "At LRS Exterior Cleaning, we specialise in professional render cleaning services designed to rejuvenate and protect the exterior of your property. Render surfaces, whether they are silicone, acrylic, cement or lime-based, can accumulate dirt, algae, moss and other pollutants over time, detracting from your property's appearance and potentially causing long-term damage. Our expert team uses advanced cleaning techniques and eco-friendly detergents to effectively remove these contaminants, restoring your render to its original, pristine condition.",
     "features": [
       {
-        "title": "Expertise and Experience",
-        "description": "Our team is trained and experienced in cleaning various types of renderings, ensuring that we use the most appropriate methods for your specific surface. We understand the delicate nature of rendering and use techniques that clean thoroughly without causing damage."
+        "title": "Enhanced Appearance",
+        "description": "Clean render significantly improves the aesthetic appeal of your property, making it look well-maintained and inviting."
       },
       {
-        "title": "Eco-Friendly Solutions",
-        "description": "We are committed to environmental responsibility. All our cleaning solutions are eco-friendly, biodegradable and safe for your plants, pets and the surrounding environment. We ensure that our methods are not only effective but also environmentally conscious."
+        "title": "Increased Property Value",
+        "description": "A clean and well-maintained exterior can increase the value of your property, making it more attractive to potential buyers or tenants."
       },
       {
         "title": "Advanced Cleaning Techniques",
         "description": "Utilising state-of-the-art equipment, we employ soft and low-pressure washing techniques that effectively clean the render without causing abrasion or damage. Our approach ensures that dirt, algae,and stains are removed while preserving the integrity of the render."
       },
       {
-        "title": "Comprehensive Service",
-        "description": "Our render cleaning service is thorough and meticulous. We cover all aspects of the cleaning process, from the initial assessment to the final rinse, ensuring that every inch of your render is cleaned to perfection. We also provide preventative treatments to inhibit the growth of algae and moss, keeping your render cleaner for longer."
+        "title": "Extended Lifespan",
+        "description": "Regular cleaning removes harmful contaminants that can cause long-term damage, thereby extending the lifespan of your render."
       },
       {
-        "title": "Customer Satisfaction",
-        "description": "At LRS Exterior Cleaning, customer satisfaction is our top priority. We work closely with you to understand your needs and provide a tailored cleaning solution that meets your expectations. Our friendly and professional team is dedicated to delivering outstanding results and ensuring you are completely satisfied with our service."
+        "title": "Healthier Environment",
+        "description": "Removing algae and mould from your render reduces the risk of these harmful substances affecting the health of your family or occupants."
       }
     ],
-    "cleaning_methods": {
-      "title": "Cleaning Methods",
-      "description": "We use soft and low-pressure washing techniques specifically designed for render surfaces. Our approach combines gentle yet effective cleaning solutions with professional equipment to remove dirt, algae, moss, and other contaminants without causing damage to the render. We also apply preventative treatments to inhibit future growth of organic matter, helping to maintain the clean appearance of your property for longer."
-    },
+    "methods": [
+      {
+        "title": "Inspection and Assessment",
+        "description": "We begin with a thorough inspection of the render to identify the type of surface and the extent of dirt, algae or other contaminants. This helps us determine the best cleaning approach."
+      },
+      {
+        "title": "Preparation",
+        "description": "We prepare the area by protecting nearby plants, windows and other surfaces to prevent any damage during the cleaning process."
+      },
+      {
+        "title": "Application of Cleaning Solution",
+        "description": "We apply our specially formulated, eco-friendly cleaning solution to the render. This solution is designed to break down dirt, algae and moss without harming the surface or the environment."
+      },
+      {
+        "title": "Soft Washing",
+        "description": "Using our advanced soft washing equipment, we gently wash the render, ensuring all contaminants are effectively removed. The low-pressure technique ensures that the render is cleaned without causing any damage."
+      },
+      {
+        "title": "Rinsing and Finishing",
+        "description": "After the cleaning solution has done its work, we thoroughly rinse the render to remove any remaining residues. We ensure that the render is left clean, bright and free from streaks or marks."
+      },
+      {
+        "title": "Preventative Treatment",
+        "description": "To extend the cleanliness of your render, we can apply a preventative treatment that inhibits the growth of algae and moss, keeping your render looking fresh for longer."
+      }
+    ],
     "FAQ": [
       {
         "id" : 1,

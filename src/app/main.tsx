@@ -1,22 +1,23 @@
-import { StrictMode } from 'react'
+import {lazy, StrictMode} from 'react'
 import { createRoot } from 'react-dom/client'
 import './globals.css'
 import Layout from './Layout'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Locations from "./pages/Locations";
-import Contact from "./pages/Contact";
-import Landing from "./pages/Landing";
-import WindowCleaning from "./pages/services/WindowCleaning";
-import PressureWashing from "./pages/services/PressureWashing";
-import RenderCleaning from "./pages/services/RenderCleaning";
-import RoofCleaning from "./pages/services/RoofCleaning";
-import UPVCConservatory from "./pages/services/UPVC&Conservatory";
-import GutterCleaning from "./pages/services/GutterCleaning";
-import ServicesDefault from "./pages/ServicesDefault";
 
 const rootElement = document.getElementById('root');
+
+const Landing = lazy(() => import("./pages/Landing"));
+const About = lazy(() => import("./pages/About"));
+const Services = lazy(() => import("./pages/Services"));
+const ServicesDefault = lazy(() => import("./pages/ServicesDefault"));
+const WindowCleaning = lazy(() => import("./pages/services/WindowCleaning"));
+const PressureWashing = lazy(() => import("./pages/services/PressureWashing"));
+const RoofCleaning = lazy(() => import("./pages/services/RoofCleaning"));
+const RenderCleaning = lazy(() => import("./pages/services/RenderCleaning"));
+const UPVCConservatory = lazy(() => import("./pages/services/UPVC&Conservatory"));
+const GutterCleaning = lazy(() => import("./pages/services/GutterCleaning"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Locations = lazy(() => import("./pages/Locations"));
 
 const router = createBrowserRouter([
     {

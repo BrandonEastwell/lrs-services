@@ -10,8 +10,29 @@ export default function QuoteForm() {
     const [cleaningService, setCleaningService] = useState<string | null>(null);
     const {register, handleSubmit, formState: { errors } } = useForm()
 
-    function handleFormSubmit(data: any) {
-        console.log("Form Data:", data);
+    async function handleFormSubmit(formData: any) {
+        console.log("Form Data:", formData);
+        const res = await fetch("http://localhost:8080", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: formData.name,
+                email: formData.email,
+                phone: formData.phone,
+                service: cleaningService,
+                extra: formData.extra
+            })
+        })
+
+        const resData = await res.json();
+
+        if (res.ok) {
+
+        } else {
+
+        }
 
     }
 
@@ -69,7 +90,7 @@ export default function QuoteForm() {
                         value: /^[A-Za-z]+(?: [a-zA-Z]+)*$/,
                         message: "Enter your full name (e.g. John Doe)"
                     }
-                })} id="name" className="w-full placeholder-white" type="text" placeholder="Full name"/>
+                })} id="name" name="name" className="w-full placeholder-white" type="text" placeholder="Full name"/>
             </div>
             <AnimatePresence>
                 {errors.name?.message &&
@@ -86,7 +107,7 @@ export default function QuoteForm() {
                         value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                         message: "Invalid email address"
                     }
-                })} className="w-full placeholder-white" type="email" placeholder="Email"/>
+                })} className="w-full placeholder-white" name="email" type="email" placeholder="Email"/>
             </div>
             <AnimatePresence>
             {errors.email?.message &&
@@ -103,7 +124,7 @@ export default function QuoteForm() {
                         value: /^(?:\+44|0)7\d{9}$/,
                         message: "Invalid UK phone number"
                     }
-                })} className="w-full placeholder-white" type="tel" placeholder="Phone number"/>
+                })} className="w-full placeholder-white" name="phone" type="tel" placeholder="Phone number"/>
             </div>
             <AnimatePresence>
             {errors.phone?.message &&
@@ -138,7 +159,7 @@ export default function QuoteForm() {
                 </AnimatePresence>
             </div>
             <div className="w-full min-h-[250px] bg-[#0C1D35]/60 border-1 border-[#132C4F] shadow-[inset_0px_1px_0px_rgba(255, 255, 255, 0.04)] rounded-[20px] p-3 mt-3">
-                <textarea {...register("extra")} className="w-full h-full placeholder-white outline-0" placeholder="Anything we need to know?" rows={9}></textarea>
+                <textarea {...register("extra")} className="w-full h-full placeholder-white outline-0" name="extra" placeholder="Anything we need to know?" rows={9}></textarea>
             </div>
             <motion.button
                 whileHover={{scale: 1.1}}
