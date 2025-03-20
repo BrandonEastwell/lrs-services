@@ -12,28 +12,31 @@ export default function QuoteForm() {
 
     async function handleFormSubmit(formData: any) {
         console.log("Form Data:", formData);
-        const res = await fetch("http://localhost:8080", {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                name: formData.name,
-                email: formData.email,
-                phone: formData.phone,
-                service: cleaningService,
-                extra: formData.extra
+        try {
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone,
+                    service: cleaningService,
+                    extra: formData.extra
+                })
             })
-        })
 
-        const resData = await res.json();
+            const resData = await res.json();
 
-        if (res.ok) {
-
-        } else {
-
+            if (res.ok) {
+                console.log(resData.message);
+            } else {
+                console.error(resData.error);
+            }
+        } catch (e) {
+            console.error(e);
         }
-
     }
 
     const arrowVariants = {
