@@ -4,7 +4,6 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 
 export default function WhyLRS() {
-
     return (
         <div className="mb-20">
             <h1 className="text-center text-white text-5xl font-semibold mb-7 mix-blend-plus-lighter opacity-85">Why LRS</h1>

@@ -11,7 +11,7 @@ import Facebook from "../../assets/facebook.svg";
 import {useState} from "react";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function MobileNavbar() {
     const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 
     function toggleNav() {
@@ -60,9 +60,9 @@ export default function Navbar() {
             initial="closed"
             animate={isNavOpen ? "open" : "closed"}
             variants={navVariants}
-            className="fixed w-full overflow-hidden backdrop-blur-[15px] bg-white/20 z-50"
+            className="fixed w-full max-w-[1280px] overflow-hidden backdrop-blur-[15px] bg-white/20 z-50"
         >
-            <div className="w-full h-full flex flex-col py-[12.5px] px-[30px] bg-[#060D13]/80">
+            <div className="w-full h-full flex flex-col py-[12.5px] px-[30px] md:px-[80px] bg-[#060D13]/80">
                 <div className="w-full flex flex-row justify-between items-center">
                     <Link to={"/"}>
                         <img src={LRSlogo} className="cursor-pointer" alt="LRS Logo" width="50" height="30" />

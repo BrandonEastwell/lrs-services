@@ -2,7 +2,7 @@ import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 import {useEffect} from "react";
 
-NProgress.configure({ showSpinner: false, trickleSpeed: 200 })
+NProgress.configure({ showSpinner: false, trickleSpeed: 100 })
 
 export default function LoadingBar({isLoading} : {isLoading: boolean}) {
     useEffect(() => {

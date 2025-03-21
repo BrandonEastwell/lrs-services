@@ -5,7 +5,12 @@ module.exports = {
         "./src/**/*.{js,ts,jsx,tsx}", // Ensure your JSX/TSX files are included
     ],
     theme: {
-        extend: {},
+        extend: {
+            spacing: {
+                'default-padding': '30px',
+                'md-padding': '60px'
+            }
+        },
     },
     plugins: [],
 };

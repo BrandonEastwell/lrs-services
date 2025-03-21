@@ -91,9 +91,9 @@ export default function ServiceCard(service : ServiceCardProps) {
                         animate="visible"
                         exit="hidden"
                     >
-                        <div className="overflow-hidden px-6 pb-5">
-                            <img src={service.image} alt={service.name} className="w-full rounded-[7px] rounded-br-[50px]" />
-                            <div className="text-white font-medium mt-4">
+                        <div className="md:grid md:grid-cols-2 md:gap-7 overflow-hidden px-6 pb-5">
+                            <img src={service.image} alt={service.name} className="h-full w-full object-cover rounded-[7px] rounded-br-[50px]" />
+                            <div className="flex flex-col justify-between text-white font-medium mt-4 md:mt-0">
                                 <p>{service.description}</p>
                                 <div className="flex items-center mt-4">
                                     <LearnMoreBtn href={`services/${service.name.replaceAll(' ', '').toLowerCase()}`} />

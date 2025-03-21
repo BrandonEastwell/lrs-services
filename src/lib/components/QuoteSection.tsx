@@ -6,16 +6,16 @@ export default function QuoteSection() {
 
     return (
         <>
-            <div className="flex flex-col">
-                <h1 className="text-center text-5xl">
+            <div className="flex flex-col place-items-center">
+                <h1 className="text-center text-5xl md:text-6xl">
                     Let’s get your <span className="text-[#ECA133]">free</span> quote
                 </h1>
-                <p className="text-center opacity-80 font-light my-7">Are you ready to get the shiniest house on the block? I bring exceptional shine and cleanliness to your property at an affordable rate.</p>
-                <div className="grid grid-cols-[1fr_2fr] p-4">
-                    <img className="rounded-full" src={Cooperate} alt=""/>
+                <p className="text-center opacity-80 font-light my-7 md:px-12 md:text-xl">Are you ready to get the shiniest house on the block? I bring exceptional shine and cleanliness to your property at an affordable rate.</p>
+                <div className="flex flex-row justify-center p-4">
+                    <img className="justify-self-end mr-4 rounded-full" src={Cooperate} alt=""/>
                     <div className="flex flex-col justify-center">
-                        <p className="text-2xl">Liam Sanderson</p>
-                        <p className="text-xs">Founder & Specialist Exterior Detailer</p>
+                        <p className="text-2xl md:text-3xl">Liam Sanderson</p>
+                        <p className="text-xs md:text-sm">Founder & Specialist Exterior Detailer</p>
                     </div>
                 </div>
                 <QuoteForm />
