@@ -10,7 +10,7 @@ import Facebook from "../../assets/facebook.svg";
 export default function Footer() {
 
     return (
-        <div className="flex flex-col bg-black space-y-8 px-[30px] md:px-[80px] py-12">
+        <div className="flex flex-col bg-black space-y-8 px-[30px] md:px-[100px] xl:px-[150px] py-12">
             <div className="flex flex-row justify-between place-items-center">
                 <p className="text-4xl font-bold">We are here to help.</p>
                 <Link to={"/"} className="cursor-pointer pl-3">

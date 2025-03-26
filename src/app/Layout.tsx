@@ -9,10 +9,14 @@ import DesktopNavbar from "../lib/components/DesktopNavbar";
 function Layout() {
     const [isLoading, setIsLoading] = useTransition();
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1280)
     const { pathname } = useLocation();
 
     useEffect(() => {
-        const handleResize = () => setIsMobile(window.innerWidth < 768);
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth > 1280)
+            setIsMobile(window.innerWidth < 768);
+        }
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
@@ -29,7 +33,7 @@ function Layout() {
 
     return (
         <>
-            {isMobile ? <MobileNavbar /> : <DesktopNavbar />}
+            {isMobile ? <MobileNavbar /> : <DesktopNavbar isDesktop={isDesktop} />}
             <LoadingBar isLoading={isLoading} />
             <Suspense fallback={<LoadingBar isLoading={true} />}>
                 <AnimatePresence mode="wait">

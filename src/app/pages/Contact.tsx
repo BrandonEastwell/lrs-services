@@ -1,9 +1,10 @@
 import QuoteSection from "../../lib/components/QuoteSection";
+import SectionContainer from "../../lib/components/SectionContainer";
 
 export default function Contact() {
     return (
-        <div className="bg-gradient-to-b from-[#0D141A] to-[#0F1D2C] px-[30px] py-20">
+        <SectionContainer fromGradient={"#0D141A"} toGradient={"#0F1D2C"} >
             <QuoteSection />
-        </div>
+        </SectionContainer>
     )
 }

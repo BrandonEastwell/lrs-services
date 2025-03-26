@@ -1,8 +1,8 @@
-import ServiceCard from "./ServiceCard";
+import {ServiceCardStatic, ServiceCardToggleable} from "./ServiceCard";
 import {useEffect, useRef, useState} from "react";
 import {Service} from "../utils/services";
 
-export default function ServiceList({ services } : { services: Service[] }) {
+export default function ServiceList({ services, toggleable } : { services: Service[], toggleable: boolean }) {
     const [openServiceId, setOpenServiceId] = useState<string | null>(null);
 
     /*
@@ -30,8 +30,13 @@ export default function ServiceList({ services } : { services: Service[] }) {
 
     return (
         <>
-            {services.map((service) => (
-                <ServiceCard key={service.id} id={service.id} name={service.name} number={service.number}
+            { toggleable && services.map((service) => (
+                <ServiceCardToggleable key={service.id} id={service.id} name={service.name} number={service.number}
+                             description={service.description} image={service.image} openService={openServiceId}
+                             onToggle={() => toggleService(service.id)} />
+            ))}
+            { !toggleable && services.map((service) => (
+                <ServiceCardStatic key={service.id} id={service.id} name={service.name} number={service.number}
                              description={service.description} image={service.image} openService={openServiceId}
                              onToggle={() => toggleService(service.id)} />
             ))}

@@ -16,7 +16,7 @@ interface reviews {
     "text": string
 }
 
-export default function ReviewsCarousel() {
+export default function ReviewsCarousel( { isMobile } : {isMobile : boolean}) {
     const [reviews, setReviews] = useState<reviews[]>(ReviewsData);
     const [currentIndex, setCurrentIndex] = useState<number>(1);
 
@@ -32,29 +32,31 @@ export default function ReviewsCarousel() {
 
     return (
         <div>
-            <h1 className="text-center text-white text-5xl font-bold mb-4">what they say</h1>
+            <h1 className="text-center text-white text-5xl xl:text-6xl font-bold mb-4">what they say</h1>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={'auto'}
+                slidesPerView={isMobile ? 1 : 3}
                 coverflowEffect={{
                     rotate: 50,
                     stretch: 0,
-                    depth: 200,
+                    depth: 150,
                     modifier: 1,
-                    slideShadows: true,
+                    slideShadows: false,
                 }}
                 modules={[EffectCoverflow]}
-                className="mySwiper"
+                className="mySwiper max-w-[1500px]"
                 onSlideChange={(swiper) => setCurrentIndex(swiper.realIndex + 1)}
             >
                 {reviews.map((review) => (
-                    <SwiperSlide key={review.reviewId}>
+                    <SwiperSlide className="place-items-center" key={review.reviewId}>
                         <TestimonialCard reviewData={review} />
                     </SwiperSlide>
                 ))}
-                <CarouselButtons currentIndex={currentIndex} maxIndex={reviews.length} next={nextReview} prev={prevReview} />
+                <div className="w-full max-w-[500px] place-self-center">
+                    <CarouselButtons currentIndex={currentIndex} maxIndex={reviews.length} next={nextReview} prev={prevReview} />
+                </div>
             </Swiper>
         </div>
     )

@@ -25,7 +25,8 @@ function sendEmail(req, res, next) {
     try {
         const mailOptions = {
             from: email,
-            to: globalThis.process.env.EMAIL,
+            to: process.env.EMAIL,
+            replyTo: email,
             subject: `${name} - ${service} - ${new Date()}`,
             text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nService: ${service}\n\nMessage:\n${extra}`
         }

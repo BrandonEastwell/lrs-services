@@ -20,7 +20,7 @@ body {
   margin: 0;
   width: 100vw;
   place-items: center;
-  background-color: #1d2231;
+  background-color: #0D141A;
 }
 
 h1 {
@@ -54,8 +54,8 @@ input {
 #root {
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
   width: 100vw;
+  max-width: 1920px;
 }
 
 #nprogress .bar {

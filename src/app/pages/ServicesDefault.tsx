@@ -4,12 +4,13 @@ import HeroSection from "../../lib/components/HeroSection";
 import HeroImage from "../../assets/pressure.png";
 import LearnMoreBtn from "../../lib/components/LearnMoreBtn";
 import Whatsapp from "../../assets/whatsapp.svg";
+import SectionContainer from "../../lib/components/SectionContainer";
 
 export default function ServicesDefault() {
     return (
         <>
             <HeroSection title={"Services"} subtitle={null} imageURL={HeroImage} button={null} />
-            <div className="bg-gradient-to-b from-[#0D141A] to-[#0F1D2C] px-[30px] py-10 place-items-center">
+            <SectionContainer fromGradient={"#0D141A"} toGradient={"#0F1D2C"} >
                 <BookBtn innerHTML={"Book appointment"} href={"/contact"} />
                 <div className="flex flex-col space-y-4 mt-7">
                     {services.map((service) => (
@@ -35,7 +36,7 @@ export default function ServicesDefault() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </SectionContainer>
         </>
     )
 }

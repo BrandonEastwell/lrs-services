@@ -13,7 +13,7 @@ interface ServiceCardProps {
     onToggle: (id: string | null) => void
 }
 
-export default function ServiceCard(service : ServiceCardProps) {
+function ServiceCardToggleable(service : ServiceCardProps) {
     const serviceContentVariants = {
         hidden: {
             opacity: 0,
@@ -109,3 +109,30 @@ export default function ServiceCard(service : ServiceCardProps) {
         </motion.div>
     )
 }
+
+function ServiceCardStatic(service : ServiceCardProps) {
+    return (
+        <div className="rounded-[20px] bg-[#0C1D35] border-[#132c4f]/4 mb-4 overflow-hidden">
+            <div className="flex flex-row justify-between px-6 py-5 items-center font-bold cursor-pointer">
+                <div className="flex flex-row gap-3 items-center">
+                    <p className="text-xl">{service.name}</p>
+                </div>
+                <p>{service.number}.</p>
+            </div>
+            <div className="md:grid md:grid-cols-2 md:gap-7 lg:grid-cols-1 overflow-hidden px-6 pb-5">
+                <img src={service.image} alt={service.name} className="h-full w-full object-cover rounded-[7px] rounded-br-[50px]" />
+                <div className="flex flex-col justify-between text-white font-medium mt-4 md:mt-0">
+                    <p>{service.description}</p>
+                    <div className="flex items-center mt-4">
+                        <LearnMoreBtn href={`services/${service.name.replaceAll(' ', '').toLowerCase()}`} />
+                        <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                            <img src={Whatsapp} alt="WhatsApp" width="24" height="24" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export { ServiceCardStatic, ServiceCardToggleable }
