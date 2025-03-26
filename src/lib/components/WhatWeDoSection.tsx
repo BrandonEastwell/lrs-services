@@ -6,14 +6,14 @@ interface methods {
 
 export default function WhatWeDoSection( { methods } : { methods: methods[] }) {
     return (
-        <>
-            <h2 className="text-4xl font-bold mb-7">What we do</h2>
+        <div className="mb-15 xl:px-[100px]">
+            <h2 className="text-4xl xl:text-5xl font-bold mb-7">From <span className="text-[#ECA133]">start</span> to <span className="text-[#3D8BC3]">finish</span></h2>
             {methods.map((method) => (
                 <div className="mb-7">
                     <h2 className="text-2xl font-semibold mb-1">{method.title}</h2>
-                    <p className="my-1.5 font-light text-sm">{method.description}</p>
+                    <p className="my-1.5 font-light text-sm xl:text-base">{method.description}</p>
                 </div>
             ))}
-        </>
+        </div>
     )
 }

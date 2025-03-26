@@ -1,6 +1,6 @@
-import Cooperate from "../../assets/cooperate.png";
+import Cooperate from "../../assets/icons/cooperate.png";
 import QuoteForm from "./QuoteForm";
-import Calendar from "../../assets/calendar.svg";
+import Calendar from "../../assets/icons/calendar.svg";
 import {useEffect, useRef, useState} from "react";
 import {AnimatePresence} from "framer-motion";
 
@@ -16,7 +16,7 @@ export default function QuoteSection() {
 
     return (
         <>
-            <div className="flex flex-col place-items-center">
+            <div className="flex flex-col place-items-center mt-10">
                 <h1 className="text-center text-5xl md:text-6xl">
                     Let’s get your <span className="text-[#ECA133]">free</span> quote
                 </h1>

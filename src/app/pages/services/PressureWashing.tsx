@@ -20,7 +20,7 @@ export default function PressureWashing() {
                 <ServiceResults service={"patio"} />
             </SectionContainer>
             <SectionContainer fromGradient={"#0D141A"} toGradient={"#0D141A"} >
-                <GetStartedQuote />
+                <GetStartedQuote text={"pressure washing services"} />
             </SectionContainer>
             <SectionContainer fromGradient={"#101820"} toGradient={"#080F16"} >
                 <WhatWeDoSection methods={pressurewashing.methods} />

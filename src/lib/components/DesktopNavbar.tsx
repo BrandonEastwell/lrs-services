@@ -1,14 +1,14 @@
 import {motion} from "framer-motion";
 import LRSlogo from "../../assets/logo/final-logo.png";
 import { Link } from "react-router-dom";
-import Whatsapp from "../../assets/whatsapp.svg";
+import Whatsapp from "../../assets/icons/whatsapp.svg";
 
 export default function DesktopNavbar({ isDesktop } : { isDesktop : boolean }) {
     return (
         <div
             className="fixed w-full h-full max-h-[55px] max-w-[1920px] overflow-hidden backdrop-blur-[15px] bg-white/20 z-50"
         >
-            <div className="w-full h-full py-[12.5px] px-[30px] md:px-[100px] xl:px-[200px] bg-[#060D13]/80">
+            <div className="w-full h-full py-[12.5px] px-[30px] md:px-[100px] xl:px-[150px] bg-[#060D13]/80">
                 <div className="w-full flex flex-row justify-between items-center">
                     <nav className="flex flex-row place-items-start font-bold text-xl space-x-6 text-white">
                         <Link to={"/"}>

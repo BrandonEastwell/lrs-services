@@ -20,7 +20,7 @@ export default function WindowCleaning() {
                 <ServiceResults service={"conservatory"} />
             </SectionContainer>
             <SectionContainer fromGradient={"#0D141A"} toGradient={"#0D141A"} >
-                <GetStartedQuote />
+                <GetStartedQuote text={"window cleaning services"} />
             </SectionContainer>
             <SectionContainer fromGradient={"#101820"} toGradient={"#080F16"} >
                 <WhatWeDoSection methods={windowcleaning.methods} />

@@ -1,13 +1,13 @@
 import {motion} from "framer-motion";
 import LRSlogo from "../../assets/logo/final-logo.png";
-import Hamburger from "../../assets/hamburger.svg";
-import Frame from "../../assets/frame.svg";
-import Health from "../../assets/health.svg";
-import Eco from "../../assets/eco.svg";
-import Whatsapp from "../../assets/whatsapp.svg";
-import Youtube from "../../assets/youtube.svg";
-import Instagram from "../../assets/instagram.svg";
-import Facebook from "../../assets/facebook.svg";
+import Hamburger from "../../assets/icons/hamburger.svg";
+import Frame from "../../assets/icons/frame.svg";
+import Health from "../../assets/icons/health.svg";
+import Eco from "../../assets/icons/eco.svg";
+import Whatsapp from "../../assets/icons/whatsapp.svg";
+import Youtube from "../../assets/icons/youtube.svg";
+import Instagram from "../../assets/icons/instagram.svg";
+import Facebook from "../../assets/icons/facebook.svg";
 import {useState} from "react";
 import { Link } from "react-router-dom";
 
@@ -106,14 +106,6 @@ export default function MobileNavbar() {
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
                                 className="">contact us</motion.button>
-                        </Link>
-                        <Link to={"/locations"}>
-                            <motion.button
-                                onClick={toggleNav}
-                                whileHover={{color: "#3D8BC3"}}
-                                whileTap={{scale: 0.9}}
-                                transition={{ duration: 0.1 }}
-                                className="">locations</motion.button>
                         </Link>
                     </nav>
                     <div className="flex flex-row gap-2">

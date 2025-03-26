@@ -2,10 +2,10 @@ import {Link} from "react-router-dom";
 import LRSlogo from "../../assets/logo/final-logo.png";
 import {motion} from "framer-motion";
 import BookBtn from "./BookBtn";
-import Whatsapp from "../../assets/whatsapp.svg";
-import Youtube from "../../assets/youtube.svg";
-import Instagram from "../../assets/instagram.svg";
-import Facebook from "../../assets/facebook.svg";
+import Whatsapp from "../../assets/icons/whatsapp.svg";
+import Youtube from "../../assets/icons/youtube.svg";
+import Instagram from "../../assets/icons/instagram.svg";
+import Facebook from "../../assets/icons/facebook.svg";
 
 export default function Footer() {
 

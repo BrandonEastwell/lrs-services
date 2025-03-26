@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Arrow from "../../assets/left_arrow.svg";
+import Arrow from "../../assets/icons/left_arrow.svg";
 import {useSwiper} from "swiper/react";
 
 export default function CarouselButtons({currentIndex, maxIndex, prev, next} : {currentIndex: number, maxIndex: number, prev: () => void, next: () => void} ) {

@@ -1,9 +1,9 @@
 import {services} from "../utils/services";
 import {useState} from "react";
-import ArrowRight from "../../assets/right_arrow.svg";
+import ArrowRight from "../../assets/icons/right_arrow.svg";
 import {AnimatePresence, motion} from "framer-motion";
 import {useForm} from "react-hook-form";
-import Inquiry from "../../assets/inquiry.svg";
+import Inquiry from "../../assets/icons/inquiry.svg";
 import LoadingBar from "./LoadingBar";
 import {OrbitProgress} from "react-loading-indicators";
 
@@ -170,6 +170,7 @@ export default function QuoteForm( { formSubmitted, setFormSubmitted } : { formS
                             {services.map((service) => (
                                 <li key={service.id} onClick={() => setCleaningService(service.name)} className="py-1.5 cursor-pointer">{service.name}</li>
                             ))}
+                            <li key={"Other"} onClick={() => setCleaningService("Other")} className="py-1.5 cursor-pointer">Other</li>
                         </motion.ul>}
                     </AnimatePresence>
                 </div>

@@ -5,14 +5,14 @@ interface features {
 
 export default function HomeBenefitsSection( { features } : { features: features[] }) {
     return (
-        <>
-            <h2 className="text-4xl font-bold mb-7">Why your home benefits</h2>
+        <div className="mb-22 px-[100px]">
+            <h2 className="text-4xl xl:text-5xl font-bold mb-7">Why your home <span className="bg-gradient-to-r from-[#3D8BC3] to-[#ECA133] bg-clip-text text-transparent">benefits</span></h2>
             {features.map((feature) => (
                 <div className="mb-7">
                     <h2 className="text-2xl font-semibold mb-1">{feature.title}</h2>
-                    <p className="my-1.5 font-light text-sm">{feature.description}</p>
+                    <p className="my-1.5 font-light text-sm xl:text-base">{feature.description}</p>
                 </div>
             ))}
-        </>
+        </div>
     )
 }

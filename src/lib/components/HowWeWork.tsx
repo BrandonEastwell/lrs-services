@@ -1,4 +1,4 @@
-import Calendar from "../../assets/calendar.svg";
+import Calendar from "../../assets/icons/calendar.svg";
 
 export default function HowWeWork() {
 

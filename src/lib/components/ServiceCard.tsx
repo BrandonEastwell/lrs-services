@@ -1,7 +1,7 @@
 import {AnimatePresence, motion} from "framer-motion";
-import ArrowRight from "../../assets/right_arrow.svg";
+import ArrowRight from "../../assets/icons/right_arrow.svg";
 import LearnMoreBtn from "./LearnMoreBtn";
-import Whatsapp from "../../assets/whatsapp.svg";
+import Whatsapp from "../../assets/icons/whatsapp.svg";
 
 interface ServiceCardProps {
     id: string,
@@ -92,11 +92,11 @@ function ServiceCardToggleable(service : ServiceCardProps) {
                         exit="hidden"
                     >
                         <div className="md:grid md:grid-cols-2 md:gap-7 overflow-hidden px-6 pb-5">
-                            <img src={service.image} alt={service.name} className="h-full w-full object-cover rounded-[7px] rounded-br-[50px]" />
+                            <img src={service.image} alt={service.name} className="h-full w-full max-h-[300px] aspect-square object-cover rounded-[7px] rounded-br-[50px]" />
                             <div className="flex flex-col justify-between text-white font-medium mt-4 md:mt-0">
                                 <p>{service.description}</p>
                                 <div className="flex items-center mt-4">
-                                    <LearnMoreBtn href={`services/${service.name.replaceAll(' ', '').toLowerCase()}`} />
+                                    <LearnMoreBtn href={`/services/${service.name.replaceAll(' ', '').toLowerCase()}`} />
                                     <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                                         <img src={Whatsapp} alt="WhatsApp" width="24" height="24" />
                                     </div>
@@ -120,11 +120,11 @@ function ServiceCardStatic(service : ServiceCardProps) {
                 <p>{service.number}.</p>
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-7 lg:grid-cols-1 overflow-hidden px-6 pb-5">
-                <img src={service.image} alt={service.name} className="h-full w-full object-cover rounded-[7px] rounded-br-[50px]" />
+                <img src={service.image} alt={service.name} className="h-full w-full max-h-[300px] aspect-square object-cover rounded-[7px] rounded-br-[50px]" />
                 <div className="flex flex-col justify-between text-white font-medium mt-4 md:mt-0">
                     <p>{service.description}</p>
                     <div className="flex items-center mt-4">
-                        <LearnMoreBtn href={`services/${service.name.replaceAll(' ', '').toLowerCase()}`} />
+                        <LearnMoreBtn href={`/services/${service.name.replaceAll(' ', '').toLowerCase()}`} />
                         <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                             <img src={Whatsapp} alt="WhatsApp" width="24" height="24" />
                         </div>

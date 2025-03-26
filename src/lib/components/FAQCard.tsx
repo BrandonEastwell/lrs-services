@@ -1,5 +1,5 @@
 import {AnimatePresence, motion} from "framer-motion";
-import ArrowRight from "../../assets/right_arrow.svg";
+import ArrowRight from "../../assets/icons/right_arrow.svg";
 
 export default function FAQCard({ id, question, answer, openFAQ, onToggle } : { id: number, question: string, answer: string, openFAQ: number | null,  onToggle: (id: number | null) => void }) {
     const FAQAnswerVariants = {

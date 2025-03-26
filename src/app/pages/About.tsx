@@ -10,7 +10,7 @@ export default function About() {
         <>
             <HeroSection title={"Why LRS"} subtitle={null} imageURL={HeroImage} button={null} />
             <SectionContainer fromGradient={"#0D141A"} toGradient={"#0F1D2C"} >
-                <div className="flex flex-col space-y-10">
+                <div className="flex flex-col gap-10 max-w-[1000px] place-self-center">
                     {sections.map((section) => (
                         <AboutCard title={section.title} description={section.description} order={section.order} />
                     ))}

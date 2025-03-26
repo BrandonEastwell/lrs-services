@@ -1,4 +1,4 @@
-import Arrow from "../../assets/left_arrow.svg";
+import Arrow from "../../assets/icons/left_arrow.svg";
 import {useEffect, useRef, useState} from "react";
 
 interface ReviewProps {
