@@ -8,7 +8,7 @@ import QuoteSection from "../../lib/components/QuoteSection";
 import ServiceList from "../../lib/components/ServiceList";
 import {services} from "../../lib/utils/services";
 import HeroSection from "../../lib/components/HeroSection";
-import HeroImage from "../../assets/pressure.png"
+import HeroImage from "../../assets/after/roof1.jpg"
 import {getImagePairs} from "../../lib/utils/imagePairs";
 import SectionContainer from "../../lib/components/SectionContainer";
 import {useEffect, useState} from "react";

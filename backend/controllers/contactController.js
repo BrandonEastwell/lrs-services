@@ -18,11 +18,14 @@ const transporter = nodemailer.createTransport({
     }
 })
 
-function sendEmail(req, res, next) {
-    const { name, email, phone, extra, service } = req.body;
-    console.log({ name, email, phone, extra, service })
+async function sendEmail(req, res, next) {
+    const {name, email, phone, extra, service} = req.body;
+    console.log({name, email, phone, extra, service})
 
     try {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) return res.status(400).send({error: errors.array()});
+
         const mailOptions = {
             from: email,
             to: process.env.EMAIL,
@@ -31,18 +34,15 @@ function sendEmail(req, res, next) {
             text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nService: ${service}\n\nMessage:\n${extra}`
         }
 
-        const errors = validationResult(req);
-        if (!errors.isEmpty()) return res.status(400).send({ error: errors.array() });
-
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                console.error(error);
-                return next(error);
-            } else {
-                console.log("Email sent: " + info.response);
-                res.send({ message: "Email sent successfully!" });
-            }
-        })
+        try {
+            const info = await transporter.sendMail(mailOptions);
+            console.log("Email sent:", info.response);
+            res.send({message: "Email sent successfully!"});
+        } catch (error) {
+            console.error("Email Error:", error);
+            next(error); // Properly pass the error
+            res.send({error: error})
+        }
     } catch (e) {
         return next(e);
     }

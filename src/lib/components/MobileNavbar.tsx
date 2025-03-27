@@ -68,14 +68,36 @@ export default function MobileNavbar() {
                         <img src={LRSlogo} className="cursor-pointer" alt="LRS Logo" width="50" height="30" />
                     </Link>
                     <motion.button
-                        whileHover={{scale: 1.1}}
-                        whileTap={{scale: 1.2}}
-                        onClick={toggleNav} className="z-10">
-                        <img src={Hamburger} alt="Menu" width="18" height="6" />
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 1.2 }}
+                        onClick={() => setIsNavOpen(!isNavOpen)}
+                        className="z-10 flex flex-col items-center justify-center"
+                    >
+                        <svg width="24" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <motion.line
+                                x1="2" y1="3" x2="22" y2="3"
+                                stroke="white" strokeWidth="2"
+                                strokeLinecap="round"
+                                animate={{
+                                    rotate: isNavOpen ? 45 : 0,
+                                    y: isNavOpen ? 6 : 0
+                                }}
+                                transition={{ duration: 0.3 }}
+                            />
+                            <motion.line
+                                x1="2" y1="15" x2="22" y2="15"
+                                stroke="white" strokeWidth="2"
+                                strokeLinecap="round"
+                                animate={{
+                                    rotate: isNavOpen ? -45 : 0,
+                                    y: isNavOpen ? -6 : 0
+                                }}
+                                transition={{ duration: 0.3 }}
+                            />
+                        </svg>
                     </motion.button>
                 </div>
 
-                {/* Menu content */}
                 <motion.div
                     className="flex flex-col h-full justify-between"
                     variants={menuContentVariants}
@@ -121,7 +143,7 @@ export default function MobileNavbar() {
                         <img src={Eco} width="15" height="15" alt="" />
                     </div>
                     <div className="flex flex-row justify-between">
-                        <a href={""}>
+                        <a href={"https://api.whatsapp.com/send/?phone=07539282657&text&type=phone_number&app_absent=0"}>
                             <motion.div
                                 whileHover={{scale: 1.1}}
                                 whileTap={{scale: 0.9}}

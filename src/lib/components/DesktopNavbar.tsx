@@ -38,8 +38,10 @@ export default function DesktopNavbar({ isDesktop } : { isDesktop : boolean }) {
                     </nav>
                     { isDesktop && (
                         <div className="flex flex-row gap-2 font-bold text-xl text-white">
-                            <img src={Whatsapp} alt="WhatsApp" width="18" height="18"/>
-                            <p>07539282657</p>
+                            <a href="https://api.whatsapp.com/send/?phone=07539282657&text&type=phone_number&app_absent=0" className="place-self-center">
+                                <img src={Whatsapp} alt="WhatsApp" width="18" height="18"/>
+                            </a>
+                            <a href="tel:+447539282657">07539282657</a>
                         </div>
                     )}
                 </div>

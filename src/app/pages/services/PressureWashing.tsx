@@ -1,5 +1,5 @@
 import HeroSection from "../../../lib/components/HeroSection";
-import Hero from "../../../assets/after/patio1.jpg";
+import Hero from "../../../assets/portfolio/pressure.jpg";
 import BookBtn from "../../../lib/components/BookBtn";
 import HomeBenefitsSection from "../../../lib/components/HomeBenefitsSection";
 import ServiceResults from "../../../lib/components/ServiceResults";

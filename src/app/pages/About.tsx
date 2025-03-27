@@ -1,7 +1,7 @@
 import whyLRS from "../../lib/datasets/whylrs.json"
 import AboutCard from "../../lib/components/AboutCard";
 import HeroSection from "../../lib/components/HeroSection";
-import HeroImage from "../../assets/pressure.png"
+import HeroImage from "../../assets/after/patio2.jpg"
 import SectionContainer from "../../lib/components/SectionContainer";
 
 export default function About() {

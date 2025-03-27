@@ -1,7 +1,7 @@
 import {services} from "../../lib/utils/services";
 import BookBtn from "../../lib/components/BookBtn";
 import HeroSection from "../../lib/components/HeroSection";
-import HeroImage from "../../assets/pressure.png";
+import HeroImage from "../../assets/after/patio1.jpg"
 import SectionContainer from "../../lib/components/SectionContainer";
 import ServiceList from "../../lib/components/ServiceList";
 

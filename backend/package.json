@@ -1,12 +1,12 @@
 {
-  "name": "backend",
+  "name": "lrs-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/app.js",
   "type": "module",
+  "main": "api/index.js",
+  "description": "",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,8 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-validator": "^7.2.1",
-    "nodemailer": "^6.10.0"
+    "nodemailer": "^6.10.0",
+    "serverless-http": "^3.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"

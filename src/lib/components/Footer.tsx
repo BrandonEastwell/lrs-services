@@ -19,8 +19,8 @@ export default function Footer() {
             </div>
             <BookBtn innerHTML={"Contact Us"} href={"/contact"} />
             <div className="flex flex-col space-y-2 font-light text-sm">
-                <p>07539 282657</p>
-                <p className="underline">liam@lrsexteriorcleaning.com</p>
+                <a href="tel:+447539282657">07539 282657</a>
+                <a href="mailto:liam@lrsexteriorcleaning.com" className="underline">liam@lrsexteriorcleaning.com</a>
                 <div className="opacity-80 text-xs">
                     <p>Ramsey Road</p>
                     <p>Dovercourt</p>
@@ -129,7 +129,7 @@ export default function Footer() {
                         <img src={Instagram} className="w-4" alt="Instagram" />
                     </motion.div>
                 </a>
-                <a href={""}>
+                <a href={"https://api.whatsapp.com/send/?phone=07539282657&text&type=phone_number&app_absent=0"}>
                     <motion.div
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}

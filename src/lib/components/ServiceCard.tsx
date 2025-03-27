@@ -97,9 +97,11 @@ function ServiceCardToggleable(service : ServiceCardProps) {
                                 <p>{service.description}</p>
                                 <div className="flex items-center mt-4">
                                     <LearnMoreBtn href={`/services/${service.name.replaceAll(' ', '').toLowerCase()}`} />
-                                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                                        <img src={Whatsapp} alt="WhatsApp" width="24" height="24" />
-                                    </div>
+                                    <a href="https://api.whatsapp.com/send/?phone=07539282657&text&type=phone_number&app_absent=0">
+                                        <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                                            <img src={Whatsapp} alt="WhatsApp" width="24" height="24" />
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -125,9 +127,11 @@ function ServiceCardStatic(service : ServiceCardProps) {
                     <p>{service.description}</p>
                     <div className="flex items-center mt-4">
                         <LearnMoreBtn href={`/services/${service.name.replaceAll(' ', '').toLowerCase()}`} />
-                        <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                            <img src={Whatsapp} alt="WhatsApp" width="24" height="24" />
-                        </div>
+                        <motion.a whileHover={{scale: 0.9}} whileTap={{scale: 1.1}} href="https://api.whatsapp.com/send/?phone=07539282657&text&type=phone_number&app_absent=0">
+                            <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                                <img src={Whatsapp} alt="WhatsApp" width="24" height="24" />
+                            </div>
+                        </motion.a>
                     </div>
                 </div>
             </div>

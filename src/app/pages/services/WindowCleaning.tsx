@@ -1,6 +1,6 @@
 import services from "../../../lib/datasets/services-pages-content.json";
 import HeroSection from "../../../lib/components/HeroSection";
-import Hero from "../../../assets/after/conservatory1.jpg";
+import Hero from "../../../assets/portfolio/window.png";
 import BookBtn from "../../../lib/components/BookBtn";
 import HomeBenefitsSection from "../../../lib/components/HomeBenefitsSection";
 import ServiceResults from "../../../lib/components/ServiceResults";

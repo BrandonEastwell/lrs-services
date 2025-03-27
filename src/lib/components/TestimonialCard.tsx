@@ -32,7 +32,7 @@ export default function TestimonialCard({ reviewData } : {reviewData: ReviewProp
     }
 
     return (
-        <div className={`${isExpanded ? "max-h-none" : "min-h-[350px]"} min-w-[400px] max-w-[500px] p-8 rounded-[35px] rounded-br-[0px] bg-gradient-to-b from-[#1A468E] to-[#3F77BC] border-1 border-[#FFFFFF]/4`}>
+        <div className={`${isExpanded ? "max-h-none" : "min-h-[350px]"} md:min-w-[400px] max-w-[500px] p-8 rounded-[35px] rounded-br-[0px] bg-gradient-to-b from-[#1A468E] to-[#3F77BC] border-1 border-[#FFFFFF]/4`}>
             <div className="flex flex-row items-center">
                 <div className="w-20 h-20">
                     <img className="w-full h-full rounded-full" src={reviewData.reviewerPhotoUrl} alt="" width="80" height="80"/>
