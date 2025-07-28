@@ -79,7 +79,7 @@ function ServiceCardToggleable(service : ServiceCardProps) {
                         initial="closed"
                         animate={service.openService === service.id ? "open" : "closed"}
                     />
-                    <p className="text-xl">{service.name}</p>
+                    <p className="text-xl text-[#FFFFFFDE]">{service.name}</p>
                 </div>
                 <motion.p variants={numberVariants} initial={"closed"} animate={service.openService === service.id ? "open" : "closed"}>{service.number}.</motion.p>
             </div>
@@ -94,7 +94,7 @@ function ServiceCardToggleable(service : ServiceCardProps) {
                         <div className="md:grid md:grid-cols-2 md:gap-7 overflow-hidden px-6 pb-5">
                             <img src={service.image} alt={service.name} className="h-full w-full max-h-[300px] aspect-square object-cover rounded-[7px] rounded-br-[50px]" />
                             <div className="flex flex-col justify-between text-white font-medium mt-4 md:mt-0">
-                                <p>{service.description}</p>
+                                <p className="text-[#FFFFFF]">{service.description}</p>
                                 <div className="flex items-center mt-4">
                                     <LearnMoreBtn href={`/services/${service.name.replaceAll(' ', '').toLowerCase()}`} />
                                     <a href="https://api.whatsapp.com/send/?phone=07539282657&text&type=phone_number&app_absent=0">

@@ -38,8 +38,8 @@ export default function ResultsCarousel({ images } : { images: image[] }) {
                 {images.map((image) => (
                     <SwiperSlide className="rounded-[20px]">
                         <div className="absolute flex flex-row font-bold z-1">
-                            <p className="translate-y-4 translate-x-5">BEFORE</p>
-                            <p className="translate-y-4 translate-x-60">AFTER</p>
+                            <p className="translate-y-4 translate-x-5 text-[#FFFFFFDE]">BEFORE</p>
+                            <p className="translate-y-4 translate-x-60 text-[#FFFFFFDE]">AFTER</p>
                         </div>
                         <ReactCompareImage leftImage={image.before} rightImage={image.after} />
                     </SwiperSlide>

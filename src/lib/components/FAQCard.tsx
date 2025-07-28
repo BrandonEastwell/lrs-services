@@ -58,7 +58,7 @@ export default function FAQCard({ id, question, answer, openFAQ, onToggle } : { 
                         initial="closed"
                         animate={openFAQ === id ? "open" : "closed"}
                     />
-                    <p className="text-base">{question}</p>
+                    <p className="text-base text-[#FFFFFFDE]">{question}</p>
                 </div>
             </div>
             <AnimatePresence>
@@ -71,7 +71,7 @@ export default function FAQCard({ id, question, answer, openFAQ, onToggle } : { 
                     >
                         <div className="overflow-hidden px-5 pb-5">
                             <div className="text-white font-light">
-                                <p>{answer}</p>
+                                <p className="text-[#FFFFFF]">{answer}</p>
                             </div>
                         </div>
                     </motion.div>

@@ -21,7 +21,7 @@ export default function FAQSection( {faqs} : {faqs: FAQs[]}  ) {
 
     return (
         <div className="xl:px-[100px]">
-            <h2 className="text-3xl font-bold mb-7">Frequently asked questions</h2>
+            <h2 className="text-3xl font-bold mb-7 text-[#FFFFFFDE]">Frequently asked questions</h2>
             <div className="space-y-2">
                 {faqs.map((faq) => (
                     <FAQCard key={faq.id} id={faq.id} question={faq.question} answer={faq.answer} openFAQ={openFAQ} onToggle={() => toggleFAQ(faq.id)} />

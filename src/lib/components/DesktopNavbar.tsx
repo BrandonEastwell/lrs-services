@@ -15,25 +15,25 @@ export default function DesktopNavbar({ isDesktop } : { isDesktop : boolean }) {
                             <img src={LRSlogo} className="cursor-pointer" alt="LRS Logo" width="50" height="30" />
                         </Link>
                         <Link to={"/services"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="ml-10">services</motion.button>
+                                className="ml-10 text-[#FFFFFF]">services</motion.a>
                         </Link>
                         <Link to={"/whylrs"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">why LRS</motion.button>
+                                className="text-[#FFFFFF]">why LRS</motion.a>
                         </Link>
                         <Link to={"/contact"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">contact us</motion.button>
+                                className="text-[#FFFFFF]">contact us</motion.a>
                         </Link>
                     </nav>
                     { isDesktop && (
@@ -41,7 +41,7 @@ export default function DesktopNavbar({ isDesktop } : { isDesktop : boolean }) {
                             <a href="https://api.whatsapp.com/send/?phone=07539282657&text&type=phone_number&app_absent=0" className="place-self-center">
                                 <img src={Whatsapp} alt="WhatsApp" width="18" height="18"/>
                             </a>
-                            <a href="tel:+447539282657">07539282657</a>
+                            <a href="tel:+447539282657 text-[#FFFFFF]">07539282657</a>
                         </div>
                     )}
                 </div>

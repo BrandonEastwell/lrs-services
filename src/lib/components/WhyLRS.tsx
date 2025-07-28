@@ -19,23 +19,23 @@ export default function WhyLRS() {
             >
                 <SwiperSlide className="flex flex-col space-y-2 min-h-[250px] px-8 place-content-center rounded-[20px] bg-gradient-to-b from-[#0D141A] to-[#0D141A] border-1 border-[#FFFFFF]/4 shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)]">
                     <p className="text-center text-5xl font-semibold bg-gradient-to-b from-[#3D8BC3] to-[#1A468E] bg-clip-text text-transparent">1</p>
-                    <p className="text-center text-xl font-semibold">Commitment to Excellence</p>
-                    <p className="text-center font-light opacity-80 text-sm">We ensure every job meets the highest standards</p>
+                    <p className="text-center text-xl font-semibold text-[#FFFFFF]">Commitment to Excellence</p>
+                    <p className="text-center font-light opacity-80 text-sm text-[#FFFFFF]">We ensure every job meets the highest standards</p>
                 </SwiperSlide>
                 <SwiperSlide className="flex flex-col space-y-2 min-h-[250px] px-8 place-content-center rounded-[20px] bg-gradient-to-b from-[#0D141A] to-[#0D141A] border-1 border-[#FFFFFF]/4 shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)]">
                     <p className="text-center text-5xl font-semibold bg-gradient-to-b from-[#3D8BC3] to-[#1A468E] bg-clip-text text-transparent">2</p>
-                    <p className="text-center text-xl font-semibold">Customer First</p>
-                    <p className="text-center font-light opacity-80 text-sm">Personalized service tailored to your specific needs.</p>
+                    <p className="text-center text-xl font-semibold text-[#FFFFFF]">Customer First</p>
+                    <p className="text-center font-light opacity-80 text-sm text-[#FFFFFF]">Personalized service tailored to your specific needs.</p>
                 </SwiperSlide>
                 <SwiperSlide className="flex flex-col space-y-2 min-h-[250px] px-8 place-content-center rounded-[20px] bg-gradient-to-b from-[#0D141A] to-[#0D141A] border-1 border-[#FFFFFF]/4 shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)]">
                     <p className="text-center text-5xl font-semibold bg-gradient-to-b from-[#3D8BC3] to-[#1A468E] bg-clip-text text-transparent">3</p>
-                    <p className="text-center text-xl font-semibold">Eco-Friendly Solutions</p>
-                    <p className="text-center font-light opacity-80 text-sm">Powerful cleaning with detergents safe for the environment.</p>
+                    <p className="text-center text-xl font-semibold text-[#FFFFFF]">Eco-Friendly Solutions</p>
+                    <p className="text-center font-light opacity-80 text-sm text-[#FFFFFF]">Powerful cleaning with detergents safe for the environment.</p>
                 </SwiperSlide>
                 <SwiperSlide className="flex flex-col space-y-2 min-h-[250px] px-8 place-content-center rounded-[20px] bg-gradient-to-b from-[#0D141A] to-[#0D141A] border-1 border-[#FFFFFF]/4 shadow-[inset_0px_1px_0px_rgba(255,255,255,0.04)]">
                     <p className="text-center text-5xl font-semibold bg-gradient-to-b from-[#3D8BC3] to-[#1A468E] bg-clip-text text-transparent">4</p>
-                    <p className="text-center text-xl font-semibold">Reliable & Affordable</p>
-                    <p className="text-center font-light opacity-80 text-sm">Professional service at competitive prices with easy payments.</p>
+                    <p className="text-center text-xl font-semibold text-[#FFFFFF]">Reliable & Affordable</p>
+                    <p className="text-center font-light opacity-80 text-sm text-[#FFFFFF]">Professional service at competitive prices with easy payments.</p>
                 </SwiperSlide>
             </Swiper>
         </div>

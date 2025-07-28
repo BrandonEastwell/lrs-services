@@ -12,7 +12,7 @@ export default function Footer() {
     return (
         <div className="flex flex-col bg-black space-y-8 px-[30px] md:px-[100px] xl:px-[150px] py-12">
             <div className="flex flex-row justify-between place-items-center">
-                <p className="text-4xl font-bold">We are here to help.</p>
+                <p className="text-4xl font-bold text-[#FFFFFFDE]">We are here to help.</p>
                 <Link to={"/"} className="cursor-pointer pl-3">
                     <img src={LRSlogo} alt="LRS Logo" width="50" height="30" />
                 </Link>
@@ -20,44 +20,44 @@ export default function Footer() {
             <BookBtn innerHTML={"Contact Us"} href={"/contact"} />
             <div className="flex flex-col space-y-2 font-light text-sm">
                 <a href="tel:+447539282657">07539 282657</a>
-                <a href="mailto:liam@lrsexteriorcleaning.com" className="underline">liam@lrsexteriorcleaning.com</a>
-                <div className="opacity-80 text-xs">
-                    <p>Ramsey Road</p>
-                    <p>Dovercourt</p>
-                    <p>Harwich, CO12 4RJ</p>
+                <a href="mailto:liam@lrsexteriorcleaning.com" className="underline text-[#FFFFFFDE]">liam@lrsexteriorcleaning.com</a>
+                <div className="opacity-80 text-xs text-[#FFFFFFDE]">
+                    <p className="text-[#FFFFFFDE]">Ramsey Road</p>
+                    <p className="text-[#FFFFFFDE]">Dovercourt</p>
+                    <p className="text-[#FFFFFFDE]">Harwich, CO12 4RJ</p>
                 </div>
             </div>
             <div className="grid grid-cols-2">
                 <div className="flex flex-col">
-                    <p className="mb-2 font-medium">The Company</p>
+                    <p className="mb-2 font-medium text-[#FFFFFFDE]">The Company</p>
                     <div className="flex flex-col opacity-80 space-y-1">
                         <Link to={"/services"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">services</motion.button>
+                                className="cursor-pointer text-[#FFFFFFDE]">services</motion.a>
                         </Link>
                         <Link to={"/whylrs"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">why LRS</motion.button>
+                                className="cursor-pointer text-[#FFFFFFDE]">why LRS</motion.a>
                         </Link>
                         <Link to={"/contact"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">contact us</motion.button>
+                                className="cursor-pointer text-[#FFFFFFDE]">contact us</motion.a>
                         </Link>
                         <Link to={"/locations"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">locations</motion.button>
+                                className="cursor-pointer text-[#FFFFFFDE]">locations</motion.a>
                         </Link>
                     </div>
 
@@ -66,46 +66,46 @@ export default function Footer() {
                     <p className="mb-2 font-medium">Services</p>
                     <div className="flex flex-col opacity-80 space-y-1">
                         <Link to={"/services/windowcleaning"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">window cleaning</motion.button>
+                                className="cursor-pointer text-[#FFFFFFDE]">window cleaning</motion.a>
                         </Link>
                         <Link to={"/services/guttercleaning"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">gutter cleaning</motion.button>
+                                className="cursor-pointer text-[#FFFFFFDE]">gutter cleaning</motion.a>
                         </Link>
                         <Link to={"/services/pressurewashing"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">pressure washing</motion.button>
+                                className="cursor-pointer text-[#FFFFFFDE]">pressure washing</motion.a>
                         </Link>
                         <Link to={"/services/roofcleaning"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">roof cleaning</motion.button>
+                                className="cursor-pointer text-[#FFFFFFDE]">roof cleaning</motion.a>
                         </Link>
                         <Link to={"/services/upvc&conservatory"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">upvc & conservatory</motion.button>
+                                className="cursor-pointer text-[#FFFFFFDE]">upvc & conservatory</motion.a>
                         </Link>
                         <Link to={"/services/rendercleaning"}>
-                            <motion.button
+                            <motion.a
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">render cleaning</motion.button>
+                                className="cursor-pointer text-[#FFFFFFDE]">render cleaning</motion.a>
                         </Link>
                     </div>
                 </div>
@@ -149,7 +149,7 @@ export default function Footer() {
                 </a>
             </div>
             <div className="flex flex-row justify-start bg-black">
-                <p className="font-light text-xs opacity-60">Copyright © 2024 LRS Exterior</p>
+                <p className="text-xs opacity-60 text-[#FFFFFFDE]">Copyright © 2024 LRS Exterior</p>
             </div>
         </div>
     )

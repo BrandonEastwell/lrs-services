@@ -71,7 +71,7 @@ export default function MobileNavbar() {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1.2 }}
                         onClick={() => setIsNavOpen(!isNavOpen)}
-                        className="z-10 flex flex-col items-center justify-center"
+                        className="z-10 flex items-center justify-center bg-transparent outline-none focus:outline-none"
                     >
                         <svg width="24" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <motion.line
@@ -131,15 +131,15 @@ export default function MobileNavbar() {
                         </Link>
                     </nav>
                     <div className="flex flex-row gap-2">
-                        <p>your house is our frame</p>
+                        <p className="text-[#FFFFFFDE]">your house is our frame</p>
                         <img src={Frame} width="15" height="15" alt="" />
                     </div>
                     <div className="flex flex-row gap-2">
-                        <p>let us revive your home</p>
+                        <p className="text-[#FFFFFFDE]">let us revive your home</p>
                         <img src={Health} width="15" height="15" alt="" />
                     </div>
                     <div className="flex flex-row gap-2">
-                        <p>we are eco friendly</p>
+                        <p className="text-[#FFFFFFDE]">we are eco friendly</p>
                         <img src={Eco} width="15" height="15" alt="" />
                     </div>
                     <div className="flex flex-row justify-between">

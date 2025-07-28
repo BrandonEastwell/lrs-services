@@ -122,7 +122,7 @@ export default function QuoteForm( { formSubmitted, setFormSubmitted } : { formS
                             value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                             message: "Invalid email address"
                         }
-                    })} className="w-full placeholder-white" name="email" type="email" placeholder="Email"/>
+                    })} className="w-full placeholder-white text-[#FFFFFF]" name="email" type="email" placeholder="Email"/>
                 </div>
                 <AnimatePresence>
                     {errors.email?.message &&
@@ -139,7 +139,7 @@ export default function QuoteForm( { formSubmitted, setFormSubmitted } : { formS
                             value: /^(?:\+44|0)7\d{9}$/,
                             message: "Invalid UK phone number"
                         }
-                    })} className="w-full placeholder-white" name="phone" type="tel" placeholder="Phone number"/>
+                    })} className="w-full placeholder-white text-[#FFFFFF]" name="phone" type="tel" placeholder="Phone number"/>
                 </div>
                 <AnimatePresence>
                     {errors.phone?.message &&
@@ -168,9 +168,9 @@ export default function QuoteForm( { formSubmitted, setFormSubmitted } : { formS
                             animate="visible"
                             exit="hidden">
                             {services.map((service) => (
-                                <li key={service.id} onClick={() => setCleaningService(service.name)} className="py-1.5 cursor-pointer">{service.name}</li>
+                                <li key={service.id} onClick={() => setCleaningService(service.name)} className="py-1.5 cursor-pointer text-[#FFFFFF]">{service.name}</li>
                             ))}
-                            <li key={"Other"} onClick={() => setCleaningService("Other")} className="py-1.5 cursor-pointer">Other</li>
+                            <li key={"Other"} onClick={() => setCleaningService("Other")} className="py-1.5 cursor-pointer text-[#FFFFFF]">Other</li>
                         </motion.ul>}
                     </AnimatePresence>
                 </div>

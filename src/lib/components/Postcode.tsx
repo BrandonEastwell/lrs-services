@@ -44,18 +44,18 @@ export default function Postcode() {
     return (
         <div className="flex flex-col place-items-center text-center pt-24 space-y-5">
             <img src={Map} alt="" width="80" height="80" />
-            <div className="text-center place-content-center flex flex-row flex-wrap">
+            <div className="text-center place-content-center flex flex-row flex-wrap ">
                 {locations.map(location => (
-                    <span>{location}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span className="text-[#FFFFFFDE]">{location}&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 ))}
             </div>
             <div>
-                <p className="font-normal opacity-80">Not sure if we cover your area?</p>
-                <p className="font-normal opacity-80">Enter your postcode and find out.</p>
+                <p className="font-normal opacity-80 text-[#FFFFFFDE]">Not sure if we cover your area?</p>
+                <p className="font-normal opacity-80 text-[#FFFFFFDE]">Enter your postcode and find out.</p>
             </div>
             <div className="max-w-[250px] w-full bg-[#0C1D35] bg-opacity-60 border-1 border-[#132C4F] shadow-[inset_0px_1px_0px_rgba(255, 255, 255, 0.04)] rounded-[20px] p-3">
                 <form className="font-medium flex flex-row justify-between">
-                    <input onChange={(event) => handleInputChange(event)} className="overflow-hidden outline-0 placeholder-white" type="text" placeholder="enter your postcode"/>
+                    <input onChange={(event) => handleInputChange(event)} className="overflow-hidden outline-0 placeholder-white text-[#FFFFFFDE]" type="text" placeholder="enter your postcode"/>
                     <motion.div
                         whileHover={{scale: 0.9}}
                         whileTap={{scale: 1.2}}

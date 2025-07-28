@@ -38,16 +38,16 @@ export default function TestimonialCard({ reviewData } : {reviewData: ReviewProp
                     <img className="w-full h-full rounded-full" src={reviewData.reviewerPhotoUrl} alt="" width="80" height="80"/>
                 </div>
                 <div className="flex-1 p-3 text-left">
-                    <p className="text-2xl font-medium ">{reviewData.name}</p>
+                    <p className="text-2xl font-medium text-[#FFFFFF]">{reviewData.name}</p>
                     <div className="flex justify-start gap-1 text-3xl text-[#ECA133]">
                         {stars}
                     </div>
                 </div>
             </div>
             <div ref={textRef} className={`overflow-hidden ${isExpanded ? `min-h-[200px]` : `h-[145px]`}`}>
-                <p className="font-light text-sm py-1">{reviewData.text}</p>
+                <p className="font-light text-sm py-1 text-[#FFFFFF]">{reviewData.text}</p>
             </div>
-            {isOverflowing && !isExpanded && <p onClick={handleReadMore} className="font-light text-sm py-1 underline">read more</p>}
+            {isOverflowing && !isExpanded && <p onClick={handleReadMore} className="font-light text-sm py-1 underline text-[#FFFFFF]">read more</p>}
         </div>
     )
 }

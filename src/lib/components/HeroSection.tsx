@@ -12,8 +12,8 @@ export default function HeroSection({ title, subtitle, imageURL, button } : { ti
                 fetchPriority="high"
             />
             <div className="flex flex-col place-items-center space-y-7">
-                <h1 className="text-center text-6xl md:text-7xl mix-blend-plus-lighter opacity-85">{title}</h1>
-                {subtitle && <h2 className="text-center text-2xl font-bold text-[#3D8BC3] mix-blend-plus-lighter">{subtitle}</h2>}
+                <h1 className="text-center text-6xl md:text-7xl mix-blend-lighten text-white">{title}</h1>
+                {subtitle && <h2 className="text-center text-2xl font-bold text-[#c3e2f7] mix-blend-screen">{subtitle}</h2>}
                 {button && <BookBtn innerHTML={"Book appointment"} href={"/contact"} />}
             </div>
         </div>
