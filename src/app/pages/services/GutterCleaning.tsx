@@ -2,12 +2,15 @@ import HeroSection from "../../../lib/components/HeroSection";
 import Gutter from "../../../assets/after/gutter1.png"
 import services from "../../../lib/datasets/services-pages-content.json"
 import BookBtn from "../../../lib/components/BookBtn";
-import FAQSection from "../../../lib/components/FAQSection";
-import WhatWeDoSection from "../../../lib/components/WhatWeDoSection";
-import GetStartedQuote from "../../../lib/components/GetStartedQuote";
-import HomeBenefitsSection from "../../../lib/components/HomeBenefitsSection";
-import ServiceResults from "../../../lib/components/ServiceResults";
 import SectionContainer from "../../../lib/components/SectionContainer";
+import {lazy} from "react";
+
+const WhatWeDoSection = lazy(() => import("../../../lib/components/WhatWeDoSection"));
+const GetStartedQuote = lazy(() => import("../../../lib/components/GetStartedQuote"));
+const FAQSection = lazy(() => import("../../../lib/components/FAQSection"));
+const ServiceResults = lazy(() => import("../../../lib/components/ServiceResults"));
+const HomeBenefitsSection = lazy(() => import("../../../lib/components/HomeBenefitsSection"));
+
 export default function GutterCleaning() {
     const { guttercleaning } = services;
 

@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './globals.css'
 import Layout from './Layout'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import Landing from "./pages/Landing";
 
 const rootElement = document.getElementById('root');
 
-const Landing = lazy(() => import("./pages/Landing"));
 const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
 const ServicesDefault = lazy(() => import("./pages/ServicesDefault"));

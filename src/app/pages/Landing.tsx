@@ -1,17 +1,18 @@
 import BookBtn from "../../lib/components/BookBtn";
 import WhyLRS from "../../lib/components/WhyLRS";
 import Postcode from "../../lib/components/Postcode";
-import ResultsCarousel from "../../lib/components/ResultsCarousel";
-import YoutubeSection from "../../lib/components/YoutubeSection";
-import ReviewsCarousel from "../../lib/components/ReviewsCarousel";
-import QuoteSection from "../../lib/components/QuoteSection";
-import ServiceList from "../../lib/components/ServiceList";
 import {services} from "../../lib/utils/services";
 import HeroSection from "../../lib/components/HeroSection";
 import HeroImage from "../../assets/after/roof1.jpg"
 import {getImagePairs} from "../../lib/utils/imagePairs";
 import SectionContainer from "../../lib/components/SectionContainer";
-import {useEffect, useState} from "react";
+import {lazy, useEffect, useState} from "react";
+
+const YoutubeSection = lazy(() => import("../../lib/components/YoutubeSection"));
+const ReviewsCarousel = lazy(() => import("../../lib/components/ReviewsCarousel"));
+const QuoteSection = lazy(() => import("../../lib/components/QuoteSection"));
+const ServiceList = lazy(() => import("../../lib/components/ServiceList"));
+const ResultsCarousel = lazy(() => import("../../lib/components/ResultsCarousel"));
 
 export default function Landing() {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

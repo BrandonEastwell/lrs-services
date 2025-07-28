@@ -3,7 +3,14 @@ import BookBtn from "./BookBtn";
 
 export default function HeroSection({ title, subtitle, imageURL, button } : { title: string, subtitle: string | null, imageURL: string, button: ReactElement | null }) {
     return (
-        <div style={{ backgroundImage: `url(${imageURL})` }} className="w-full min-h-[50vh] bg-right bg-cover pt-[70px] md:pt-[120px] px-[30px] md:px-[80px] z-10">
+        <div className="relative w-full min-h-[50vh] pt-[70px] md:pt-[120px] px-[30px] md:px-[80px] z-10 overflow-hidden">
+            <img
+                src={imageURL}
+                alt=""
+                className="absolute top-0 left-0 w-full h-full object-cover object-right -z-10"
+                loading="eager"
+                fetchPriority="high"
+            />
             <div className="flex flex-col place-items-center space-y-7">
                 <h1 className="text-center text-6xl md:text-7xl mix-blend-plus-lighter opacity-85">{title}</h1>
                 {subtitle && <h2 className="text-center text-2xl font-bold text-[#3D8BC3] mix-blend-plus-lighter">{subtitle}</h2>}

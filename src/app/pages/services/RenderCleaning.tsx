@@ -1,13 +1,15 @@
 import HeroSection from "../../../lib/components/HeroSection";
 import Hero from "../../../assets/after/patio1.jpg";
 import BookBtn from "../../../lib/components/BookBtn";
-import HomeBenefitsSection from "../../../lib/components/HomeBenefitsSection";
-import ServiceResults from "../../../lib/components/ServiceResults";
-import GetStartedQuote from "../../../lib/components/GetStartedQuote";
-import WhatWeDoSection from "../../../lib/components/WhatWeDoSection";
-import FAQSection from "../../../lib/components/FAQSection";
 import services from "../../../lib/datasets/services-pages-content.json";
 import SectionContainer from "../../../lib/components/SectionContainer";
+import {lazy} from "react";
+
+const WhatWeDoSection = lazy(() => import("../../../lib/components/WhatWeDoSection"));
+const GetStartedQuote = lazy(() => import("../../../lib/components/GetStartedQuote"));
+const FAQSection = lazy(() => import("../../../lib/components/FAQSection"));
+const ServiceResults = lazy(() => import("../../../lib/components/ServiceResults"));
+const HomeBenefitsSection = lazy(() => import("../../../lib/components/HomeBenefitsSection"));
 
 export default function RenderCleaning() {
     const { rendercleaning } = services;

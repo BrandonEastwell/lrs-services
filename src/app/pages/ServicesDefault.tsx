@@ -3,7 +3,9 @@ import BookBtn from "../../lib/components/BookBtn";
 import HeroSection from "../../lib/components/HeroSection";
 import HeroImage from "../../assets/after/patio1.jpg"
 import SectionContainer from "../../lib/components/SectionContainer";
-import ServiceList from "../../lib/components/ServiceList";
+import {lazy} from "react";
+
+const ServiceList = lazy(() => import("../../lib/components/ServiceList"));
 
 export default function ServicesDefault() {
     return (
