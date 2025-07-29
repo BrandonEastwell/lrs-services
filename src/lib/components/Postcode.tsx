@@ -54,7 +54,7 @@ export default function Postcode() {
                 <p className="font-normal opacity-80 text-[#FFFFFFDE]">Enter your postcode and find out.</p>
             </div>
             <div className="max-w-[250px] w-full bg-[#0C1D35] bg-opacity-60 border-1 border-[#132C4F] shadow-[inset_0px_1px_0px_rgba(255, 255, 255, 0.04)] rounded-[20px] p-3">
-                <form className="font-medium flex flex-row justify-between">
+                <form onSubmit={checkPostcode} className="font-medium flex flex-row justify-between">
                     <input onChange={(event) => handleInputChange(event)} className="overflow-hidden outline-0 placeholder-white text-[#FFFFFFDE]" type="text" placeholder="enter your postcode"/>
                     <motion.div
                         whileHover={{scale: 0.9}}

@@ -24,7 +24,7 @@ export default function ResultsCarousel({ images } : { images: image[] }) {
         return setCurrentIndex(prevState => prevState - 1);
     }
     return (
-        <div className="w-full max-w-[550px] justify-self-center">
+        <div className="w-full max-w-[550px] m-auto">
             <Swiper
                 noSwiping={true}
                 allowTouchMove={false}
