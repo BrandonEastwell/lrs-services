@@ -17,7 +17,9 @@ export default function Footer() {
                     <img src={LRSlogo} alt="LRS Logo" width="50" height="30" />
                 </Link>
             </div>
-            <BookBtn innerHTML={"Contact Us"} href={"/contact"} />
+            <div className="flex">
+                <BookBtn innerHTML={"Contact Us"} href={"/contact"} />
+            </div>
             <div className="flex flex-col space-y-2 font-light text-sm">
                 <a href="tel:+447539282657">07539 282657</a>
                 <a href="mailto:liam@lrsexteriorcleaning.com" className="underline text-[#FFFFFFDE]">liam@lrsexteriorcleaning.com</a>

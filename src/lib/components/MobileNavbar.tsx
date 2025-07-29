@@ -106,28 +106,28 @@ export default function MobileNavbar() {
                 >
                     <nav className="flex flex-col place-items-start font-bold text-4xl mt-8 space-y-6 text-white">
                         <Link to={"/services"}>
-                            <motion.button
+                            <motion.a
                                 onClick={toggleNav}
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">services</motion.button>
+                                className="">services</motion.a>
                         </Link>
                         <Link to={"/whylrs"}>
-                            <motion.button
+                            <motion.a
                                 onClick={toggleNav}
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">why LRS</motion.button>
+                                className="">why LRS</motion.a>
                         </Link>
                         <Link to={"/contact"}>
-                            <motion.button
+                            <motion.a
                                 onClick={toggleNav}
                                 whileHover={{color: "#3D8BC3"}}
                                 whileTap={{scale: 0.9}}
                                 transition={{ duration: 0.1 }}
-                                className="">contact us</motion.button>
+                                className="">contact us</motion.a>
                         </Link>
                     </nav>
                     <div className="flex flex-row gap-2">
